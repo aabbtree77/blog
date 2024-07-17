@@ -13,22 +13,14 @@ Here is what I really need:
 
 - [ ] Code syntax highlighter. 
 
-The things I do not care about: All the meta stuff like tags, reading time, time stamps, comments, contact forms, search bars, TOC, archive, recent posts, suggestions, internal navigation, CMS and an online rich text editor. A blog is not a corporate media system, it is about personal notes, mostly. Essentially, a github readme would suffice, but it is better to control the conversion of Markdown and LaTeX explicitly and locally.
+What I do not care about: All the meta stuff like tags, reading time, time stamps, comments, contact forms, search bars, TOC, archive, recent posts, suggestions, internal navigation links, CMS/online rich text editor. A blog is not a corporate media system, it is about personal notes, mostly. A single github readme would suffice, but it is better to control Markdown and LaTeX rendering explicitly and locally.
 
 # Setup
 
-Install Go, cd into gocode, run "go build", move the resulting "md2html" to the root of this repo. Run it ("./md2html"). It will scan all the root level "article*" folders with "index.md" files, turn Markdown to HTML and then inject those HTML pieces into "index_template.html" resulting in one big "index.html". This "index.html" file, along with the "css", "js", and "imgs" folders serves a blog. 
-
-I host it using github pages by copying stuff to "dist", followed by
-
-```sh
-git subtree push --prefix dist origin gh-pages
-```
-
-The repository settings on github.com need to be adjusted to allow gh-pages.
+Install Go, cd into gocode, run "go build", move the resulting "md2html" to the root of this repo. Run it ("./md2html"). It will scan all the root level "article*" folders with "index.md" files, turn Markdown to HTML and then inject those HTML pieces into "index_template.html" resulting in one big "index.html". This "index.html" file, along with the "css", "js", and "imgs" folders, serves a blog. I host it using Github Pages.
 
 # References
 
-[Coby Chapple. Deploying a subfolder to GitHub Pages. 2022](https://gist.github.com/cobyism/4730490)
+[How to Deploy a Static Website for Free Using Github Pages, 2022.](https://medium.com/flycode/how-to-deploy-a-static-website-for-free-using-github-pages-8eddc194853b)
 
 
