@@ -1,14 +1,14 @@
 package main
 
 import (
-    "fmt"
-    "io/ioutil"
-    "log"
-    "os"
-    "path/filepath"
-    "strings"
+	"fmt"
+	"io/ioutil"
+	"log"
+	"os"
+	"path/filepath"
+	"strings"
 
-    "github.com/gomarkdown/markdown"
+	"github.com/gomarkdown/markdown"
 )
 
 func main() {
@@ -37,7 +37,7 @@ func main() {
         htmlFile := filepath.Join(folder, "index.html")
 
         // Read markdown file
-        input, err := ioutil.ReadFile(markdownFile)
+        input, err := os.ReadFile(markdownFile)
         if err != nil {
             log.Fatalf("Error reading markdown file: %v", err)
         }

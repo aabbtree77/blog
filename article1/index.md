@@ -14,23 +14,26 @@
 
 Programming horror stories: null, pointers, [generics](https://nim-lang.org/docs/tut2.html#generics), [templates](https://nim-lang.org/docs/tut2.html#templates), [macros](https://nim-lang.org/docs/tut3.html), [pragmas](https://nim-lang.org/docs/manual.html#pragmas), all the 3D backends, FFI to C, HTML templates, ORMs, C++, Java design patterns, Windows/Ubuntu updates, GNU/GPL, system libs/paths, Make and CMake, "homoiconic", ["design by a committee"](https://en.wikipedia.org/wiki/Design_by_committee)...
 
-Big disappointments I: OO/FP/Actors, Lisp, Smalltalk, [io](https://iolanguage.org/), Tcl, Lua, Forth, Prolog, Erlang, Ruby, Elixir, Julia, Scilab, Elm, ReasonML, [F#](https://danielbachler.de/2020/12/23/what-i-wish-i-knew-when-learning-fsharp.html), OCaml (see [the comment](https://news.ycombinator.com/item?id=29581112) by wk_end), Scala, Haskell... PEG grammars, parser combinators, most of the "compiler theory". 
+Big disappointments I: OO/FP/Actors, Lisp, Smalltalk, [io](https://iolanguage.org/), Tcl, Lua, Ruby, Forth, Prolog, Erlang, Elixir, [Pony](https://www.ponylang.io/), Julia, Scilab...
 
-Big disappointments II: "Better C/C++". Fortran 2023, Pascal, Ada, D, Nim, [Rust](https://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/), Zig, Jai, Odin, [Vlang](https://github.com/vlang/v), Carbon, [Cyclone](https://github.com/pippijn/cyclone), [Ion](https://github.com/pervognsen/bitwise/tree/master), [C2](https://github.com/c2lang/), [C3](https://github.com/c3lang/c3c), [Quaint](https://github.com/bbu/quaint-lang), [Myrddin](https://jakob.space/blog/first-impressions-of-the-myrddin-programming-language.html), [Ark](https://github.com/ark-lang/ark), [Carp](https://github.com/carp-lang/Carp)...
+Big disappointments II: [Elm](https://elm-lang.org/news/farewell-to-frp), ReasonML, [F#](https://danielbachler.de/2020/12/23/what-i-wish-i-knew-when-learning-fsharp.html), OCaml (see [the comment](https://news.ycombinator.com/item?id=29581112) by wk_end), Haskell, Scala... PEG grammars, parser combinators...
 
-Big disappointments III: Unity, Unreal, Godot, [and the rest](https://www.youtube.com/@gamefromscratch/videos). All the desktop GUI frameworks. Automated diagram drawing like Mermaid. Figma and [Fidget](https://github.com/treeform/fidget).
+Big disappointments III: "Better C/C++". Fortran 2023, Pascal, Ada, D, Nim, [Rust](https://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/), Zig, Jai, Odin, [V](https://github.com/vlang/v), Carbon, [Cyclone](https://github.com/pippijn/cyclone), [Ion](https://github.com/pervognsen/bitwise/tree/master), [C2](https://github.com/c2lang/), [C3](https://github.com/c3lang/c3c), [Quaint](https://github.com/bbu/quaint-lang), [Myrddin](https://jakob.space/blog/first-impressions-of-the-myrddin-programming-language.html), [Ark](https://github.com/ark-lang/ark), [Carp](https://github.com/carp-lang/Carp)...
 
-Decent systems: 
+Big disappointments IV: Unity, Unreal, Godot, and [the rest](https://www.youtube.com/@gamefromscratch/videos). All the desktop GUI frameworks. Automated diagram drawing like Mermaid. Figma and [Fidget](https://github.com/treeform/fidget).
 
-- Numerical optimization: (Python + conda + matplotlib + pytorch).
+Big disappointments V: kilo, micro, nano, pico, Vim, Zed, [xi](https://github.com/xi-editor/xi-editor), gdb, ddd, [pudb](https://documen.tician.de/pudb/), [gdbgui](https://www.gdbgui.com/), gedit, LiteIDE, GoLand, [CodeLite](https://github.com/eranif/codelite), Geany.
+
+Decent systems:
+
+- Numerical optimization: Python + conda + matplotlib + pytorch.
 
 - GUIs: (Node + TypeScript + React + ChatGPT 4o) or (vanilla Js + ChatGPT 3.5).
 
-- 3D: (Blender for GLTF + a custom engine with concrete focus).
+- 3D: Blender for GLTF + a custom engine.
 
 - Messaging: MQTT, Go + golibp2p.
 
-- Embedded systems: (ATmega/Raspberry Pi/Linux + C), not (C++, ESP32, Rainmaker, MicroPython, router OSes).
+- Embedded systems: (ATmega/Raspberry Pi + C), not (C++, ESP32, Rainmaker, MicroPython, router OSes).
 
 - Games: Until Dawn (2015), Inside (2016), [Gokoban (2017)](https://github.com/danaugrs/gokoban), [towerdefense (2017)](https://github.com/selenebun/towerdefense?tab=readme-ov-file), Spintires (2014-2020).
-
