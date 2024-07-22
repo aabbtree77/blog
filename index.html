@@ -28,37 +28,35 @@
 
 <p><a href="https://benhoyt.com/writings/mugo/">Mugo (2021):</a> A subset of Go compiled to the x86-64 assembly, in Go.</p>
 
-<p><a href="https://www.youtube.com/watch?v=gwLQMuTspxE">The Art of Code (2022).</a> One of the most beautiful and entertaining presentations about computing models and programming languages.</p>
+<p><a href="https://www.youtube.com/watch?v=gwLQMuTspxE">The Art of Code (2022).</a> A beautiful presentation about weird programming languages.</p>
 
-<p><a href="https://stackoverflow.com/questions/61048788/why-is-mov-turing-complete">mov (2013)</a> and <a href="https://github.com/Battelle/movfuscator">movfuscator (2015).</a> One of the remarkable brain twisters.</p>
+<p><a href="https://stackoverflow.com/questions/61048788/why-is-mov-turing-complete">mov (2013)</a> and <a href="https://github.com/Battelle/movfuscator">movfuscator (2015).</a> A single Assembly instruction as a programming language.</p>
 </div>
     <span class="read-more">Read more</span>
 </div>
 
 <div class="article">
     <h2>My Ubuntu Experience</h2>
-    <div class="summary"><p>I began using Ubuntu around 2010. Tried Arch Linux without much joy soon afterwards, then a year with Fedora, and another year with macOS (OS X Lion). Since 2014 I solely use Ubuntu:</p>
+    <div class="summary"><p>I began using Ubuntu around 2010. Tried Arch Linux for a short time, a year with Fedora, and another year with macOS (OS X Lion). Since 2014 I solely use Ubuntu:</p>
 </div>
-    <div class="content"><p>I began using Ubuntu around 2010. Tried Arch Linux without much joy soon afterwards, then a year with Fedora, and another year with macOS (OS X Lion). Since 2014 I solely use Ubuntu:</p>
+    <div class="content"><p>I began using Ubuntu around 2010. Tried Arch Linux for a short time, a year with Fedora, and another year with macOS (OS X Lion). Since 2014 I solely use Ubuntu:</p>
 
 <ul>
-<li><p>Every time there is some major version change somewhere in these desktop GUI technologies, expect bugs and even black screens. What works well is a dual HD/SSD drive setup where most of your data will reside on a slow HD and the system on a faster SSD, with an Ubuntu USB stick nearby to reinstall the whole thing.</p></li>
+<li><p>Every time there is a major change somewhere in the desktop GUI technology, expect bugs and even black screens. What works well is a dual HD/SSD drive setup where most of your data will reside on a slow HD drive and the system on a faster SSD, with an Ubuntu USB stick nearby to reinstall the whole thing.</p></li>
 
 <li><p>Contrary to common suggestions, &ldquo;sudo apt upgrade&rdquo; should never be run. It is very fragile. If there is a network glitch or you accidentally cancel the upgrade, you may lose the whole desktop environment or something equally bad like the network/sound drivers.</p></li>
 
-<li><p>It is almost never a good idea to install a freshly released new major Ubuntu version unless you want to be an unpaid beta tester. I was tempted to try out the new 24.04 only to find out so many bugs. Went back to 22.04. It is good to wait for a year or two. Do not trust any happy youtubers discussing &ldquo;amazing recent releases&rdquo;. Most of these &ldquo;indies&rdquo; are affiliated with the product owners by now or rush their videos without deeper testing.</p></li>
+<li><p>It is not a good idea to install a freshly released Ubuntu unless you want to be an unpaid beta tester.</p></li>
 
-<li><p>Many Windows-centric programs won&rsquo;t work even if they claim to have Linux/Ubuntu ports for some time. In my experience, Unreal 4 was crashing all the time, Unity worked better, but I would not use it either. TomTom with wine is hopeless too.
-Whatsapp, Messenger still do not have fully working apps on Ubuntu in the year 2024. Viber runs perfectly natively, kudos to them. wine is always a mess. Lately I could not install it without re-enabling Ubuntu updates which I usually disable.</p></li>
+<li><p>Many Windows-centric programs won&rsquo;t work even if they claim to have Linux/Ubuntu ports for some time. In my experience, Unreal crashes all the time, Unity works fine. TomTom (via wine) does not work at all.
+Whatsapp, Messenger still do not have fully working Ubuntu programs in the year 2024. Viber runs perfectly natively, kudos to them. wine remains to be a mess. Lately I could not install it without re-enabling Ubuntu updates which I usually disable.</p></li>
 
-<li><p>Remote desktop access is horrid, but it is a difficult problem. Remmina won&rsquo;t hole-punch through. I have not tried Connections, but unless it graciously donates some kind of a VPN server behind it, that won&rsquo;t work either. Golibp2p and the Web3 are kind of too slow for this problem.</p></li>
+<li><p>Remote desktop access is horrid. Remmina won&rsquo;t hole-punch through. I have not tried Connections.</p></li>
 
-<li><p>It used to be hard to install a full Python pipeline properly with CUDA, around say 2012. Ten years later this is easy with conda. Docker containers are also used a lot.</p></li>
+<li><p>It used to be difficult to install Python with CUDA. conda solves this problem well. Docker containers are also frequently applied.</p></li>
 </ul>
 
-<p>In general, Ubuntu is great compared to Windows/macOS. I do not see any need for macOS, but Windows is still important to 3D like running Unity/Unreal, CAD, some of the newest PC games. Other than that, install Ubuntu 22.04 and you will be fine for a decade. Along with Chromium (not Chrome), one can still run youtube and lichess on i3 with an integrated default GPU and &ldquo;only&rdquo; 4GB of RAM. This is the borderline in the year 2024. Better have at least 8GB of RAM for the browser activity.</p>
-
-<p>P.S.</p>
+<p>P.S. Ubuntu desktop evolution</p>
 
 <p>2004 - 2010: GNOME 2.</p>
 
@@ -82,32 +80,18 @@ Whatsapp, Messenger still do not have fully working apps on Ubuntu in the year 2
 </div>
 
 <div class="article">
-    <h2>Disappointing Projects</h2>
-    <div class="summary"><p>So much time is wasted everywhere. I will note a few problem areas/projects, let&rsquo;s hope they are a necessary transition towards something greater yet to come.</p>
+    <h2>Rust</h2>
+    <div class="summary"><p><a href="https://www.reddit.com/r/rust/comments/7qels2/i_wonder_why_graydon_hoare_the_author_of_rust/">Rust</a> is the only static non-GC language which has these five features:</p>
 </div>
-    <div class="content"><p>So much time is wasted everywhere. I will note a few problem areas/projects, let&rsquo;s hope they are a necessary transition towards something greater yet to come.</p>
+    <div class="content"><p><a href="https://www.reddit.com/r/rust/comments/7qels2/i_wonder_why_graydon_hoare_the_author_of_rust/">Rust</a> is the only static non-GC language which has these five features:</p>
 
-<p>&ldquo;Great ideas&rdquo;: null, pointers, smart pointers, <a href="https://nim-lang.org/docs/tut2.html#generics">generics</a>, <a href="https://nim-lang.org/docs/tut2.html#templates">templates</a>, <a href="https://nim-lang.org/docs/tut3.html">macros</a>, <a href="https://nim-lang.org/docs/manual.html#pragmas">pragmas</a>, all the 3D backends, FFI to C, HTML templates, ORMs, <a href="https://yosefk.com/c++fqa/">C++</a>, &ldquo;design patterns&rdquo;, Windows/Ubuntu updates, GPL licenses, system libs/paths, Make and CMake, &ldquo;homoiconic&rdquo;, <a href="https://en.wikipedia.org/wiki/Design_by_committee">&ldquo;design by a committee&rdquo;</a>, &ldquo;lets reduce everything to OO/FP/Actor/pointers&rdquo;, PEG grammars, parser combinators&hellip;</p>
-
-<p>Most of the dynamic languages do not lead anywhere (except maybe Python): Lisp, Smalltalk, <a href="https://iolanguage.org/">io</a>, Tcl, Lua, Ruby, Forth, Prolog, Erlang, Elixir, Julia, Scilab. <a href="https://www.destroyallsoftware.com/talks/wat">Js</a>&hellip;</p>
-
-<p>It is fair to say that most of the programming languages, not just the dynamic ones, do not lead anywhere. Examine <strong>933</strong> programming languages on <a href="https://en.wikipedia.org/wiki/Rosetta_Code">Rosetta Code</a> and count the ones which have significant software written in them.</p>
-
-<p>Paradoxically, most of the static GC-based FP languages with the most precise type systems written by compiler theory gurus are practical disasters: <a href="https://elm-lang.org/news/farewell-to-frp">Elm</a>, ReasonML, <a href="https://danielbachler.de/2020/12/23/what-i-wish-i-knew-when-learning-fsharp.html">F#</a>, OCaml (see <a href="https://news.ycombinator.com/item?id=29581112">the comment</a> by wk_end), <a href="https://www.stephendiehl.com/posts/docs.html">Haskell</a>, Idris, Scala&hellip; Add to this list <a href="https://www.ponylang.io/">Pony</a>, which is not the FP per se, but still one of these high creativity smart type systems. Elm/ReasonML vs. TypeScript is a good reality check here.</p>
-
-<p>&ldquo;Better C/C++&rdquo; does not exist, unless we accept Rust with its complexity. Fortran 2023, Pascal, Ada, D, Nim, <a href="https://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/">Rust</a>, Zig, Jai, Odin, <a href="https://github.com/vlang/v">V</a>, Carbon, <a href="https://github.com/pippijn/cyclone">Cyclone</a>, <a href="https://github.com/pervognsen/bitwise/tree/master">Ion</a>, <a href="https://github.com/c2lang/">C2</a>, <a href="https://github.com/c3lang/c3c">C3</a>, <a href="https://github.com/bbu/quaint-lang">Quaint</a>, <a href="https://jakob.space/blog/first-impressions-of-the-myrddin-programming-language.html">Myrddin</a>, <a href="https://github.com/ark-lang/ark">Ark</a>, <a href="https://github.com/carp-lang/Carp">Carp</a>, <a href="https://www.reddit.com/r/ProgrammingLanguages/comments/lf0xuc/ats_programming/">ATS</a>&hellip; So many incredible talents producing&hellip; what exactly? <a href="https://github.com/aabbtree77/twinpeekz2">I like Nim</a>, it has only &ldquo;gradual complexity&rdquo;, but it lacks solid sum types, focus/belief system.</p>
-
-<p>A lot of complexity seems to escalate after adding generic types. The only widely accepted modern language that did not have them was Go prior to v1.18 (2022). Go surely messed up <a href="https://www.reddit.com/r/typescript/comments/15y9tbm/anyone_who_tried_to_like_golang_and_tried_it_many/">a lot</a> (pointers, capitalization to mark exports, GOPATH, err nil instead of business logic everywhere, 60+ thousand github issues), but it had the right to use the slogan &ldquo;less is more&rdquo; in a way.</p>
-
-<p>Go is a goner now. I would want a static GC-based language to be as high level as possible, with a lot of batteries, but Go tries to reach a tiny low level space between C and Java, called &ldquo;static Erlang&rdquo;. Compared to Java/C#, the Go ecosystem lacks a web framework and a desktop GUI library, despite some heroic efforts by many indie developers. <a href="https://libp2p.io/implementations/">golibp2p</a> remains an impressive unique project, but it seems that Go is being overtaken by Rust there. Another example: Vite (a build tool for React) uses Rollup (Js) and esbuild (Go), <a href="https://github.com/vitejs/vite/discussions/7622">both are going to be replaced with Rolldown (Rust)</a>. Rust is needlessly complex, but it has null-protection, sum types, and a C-like fast runtime. Those of us, who were annoyed by the lack of static types in Node or Django, did not find peace with Go, we moved on to TypeScript. This also includes young developers like <a href="https://www.youtube.com/channel/UCFvPgPdb_emE_bpMZq6hmJQ">Ben Davis</a> who did give Go a try.</p>
-
-<p>All the big 3D engines: Unity, Unreal, Godot, and <a href="https://www.youtube.com/@gamefromscratch/videos">the rest</a> are beyond hopeless. Imagine you have a lot of man-years, but the problem is, you want to please everyone. So you now have to divide your resources by multiple 3D backends including the newest Vulkan, WebGPU, DX12, MoltenVK/Metal, 2D and 3D, the engine itself and the editor, a scripting language on top, high quality pipeline with RTX and hardware ray tracing vs reasonable default, games vs cinema, desktop, mobile, web, online asset stores, license tracking, with the need to communicate and test changes everywhere.</p>
-
-<p>Despite all that, it is surprising how much one man with persistence can do, and how cleanly a million lines of C++ (with Vulkan) can compile, see <a href="https://github.com/godlikepanos/anki-3d-engine">AnKi 3D engine</a> by Panagiotis Christopoulos Charitos.</p>
-
-<p>All the desktop GUI frameworks have tiny fractured communities. I would bet on the web and React here. Figma lacks tools like <a href="https://github.com/treeform/fidget">Fidget</a>.</p>
-
-<p>Most of the text editors, with debuggers or not, are not great, except maybe VS Code which is a heavy IDE. Kilo, micro, nano, pico, Vim, Zed, <a href="https://github.com/xi-editor/xi-editor">xi</a>, ddd, <a href="https://documen.tician.de/pudb/">pudb</a>, <a href="https://www.gdbgui.com/">gdbgui</a>, gedit, LiteIDE, GoLand, <a href="https://github.com/eranif/codelite">CodeLite</a>, Geany&hellip; I used to be on the Vim side of things, but it takes ages to configure it once you move to another machine.</p>
+<ol>
+<li>Null-protection.</li>
+<li>Sum types.</li>
+<li>Modules and packages.</li>
+<li>C-like fast runtime.</li>
+<li>Massive adoption.</li>
+</ol>
 </div>
     <span class="read-more">Read more</span>
 </div>

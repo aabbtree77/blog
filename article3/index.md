@@ -1,25 +1,9 @@
-# Disappointing Projects
+# Rust
 
-So much time is wasted everywhere. I will note a few problem areas/projects, let's hope they are a necessary transition towards something greater yet to come.
+[Rust](https://www.reddit.com/r/rust/comments/7qels2/i_wonder_why_graydon_hoare_the_author_of_rust/) is the only static non-GC language which has these five features:
 
-"Great ideas": null, pointers, smart pointers, [generics](https://nim-lang.org/docs/tut2.html#generics), [templates](https://nim-lang.org/docs/tut2.html#templates), [macros](https://nim-lang.org/docs/tut3.html), [pragmas](https://nim-lang.org/docs/manual.html#pragmas), all the 3D backends, FFI to C, HTML templates, ORMs, [C++](https://yosefk.com/c++fqa/), "design patterns", Windows/Ubuntu updates, GPL licenses, system libs/paths, Make and CMake, "homoiconic", ["design by a committee"](https://en.wikipedia.org/wiki/Design_by_committee), "lets reduce everything to OO/FP/Actor/pointers", PEG grammars, parser combinators...
-
-Most of the dynamic languages do not lead anywhere (except maybe Python): Lisp, Smalltalk, [io](https://iolanguage.org/), Tcl, Lua, Ruby, Forth, Prolog, Erlang, Elixir, Julia, Scilab. [Js](https://www.destroyallsoftware.com/talks/wat)...
-
-It is fair to say that most of the programming languages, not just the dynamic ones, do not lead anywhere. Examine **933** programming languages on [Rosetta Code](https://en.wikipedia.org/wiki/Rosetta_Code) and count the ones which have significant software written in them.
-
-Paradoxically, most of the static GC-based FP languages with the most precise type systems written by compiler theory gurus are practical disasters: [Elm](https://elm-lang.org/news/farewell-to-frp), ReasonML, [F#](https://danielbachler.de/2020/12/23/what-i-wish-i-knew-when-learning-fsharp.html), OCaml (see [the comment](https://news.ycombinator.com/item?id=29581112) by wk_end), [Haskell](https://www.stephendiehl.com/posts/docs.html), Idris, Scala... Add to this list [Pony](https://www.ponylang.io/), which is not the FP per se, but still one of these high creativity smart type systems. Elm/ReasonML vs. TypeScript is a good reality check here.
-
-"Better C/C++" does not exist, unless we accept Rust with its complexity. Fortran 2023, Pascal, Ada, D, Nim, [Rust](https://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/), Zig, Jai, Odin, [V](https://github.com/vlang/v), Carbon, [Cyclone](https://github.com/pippijn/cyclone), [Ion](https://github.com/pervognsen/bitwise/tree/master), [C2](https://github.com/c2lang/), [C3](https://github.com/c3lang/c3c), [Quaint](https://github.com/bbu/quaint-lang), [Myrddin](https://jakob.space/blog/first-impressions-of-the-myrddin-programming-language.html), [Ark](https://github.com/ark-lang/ark), [Carp](https://github.com/carp-lang/Carp), [ATS](https://www.reddit.com/r/ProgrammingLanguages/comments/lf0xuc/ats_programming/)... So many incredible talents producing... what exactly? [I like Nim](https://github.com/aabbtree77/twinpeekz2), it has only "gradual complexity", but it lacks solid sum types, focus/belief system.
-
-A lot of complexity seems to escalate after adding generic types. The only widely accepted modern language that did not have them was Go prior to v1.18 (2022). Go surely messed up [a lot](https://www.reddit.com/r/typescript/comments/15y9tbm/anyone_who_tried_to_like_golang_and_tried_it_many/) (pointers, capitalization to mark exports, GOPATH, err nil instead of business logic everywhere, 60+ thousand github issues), but it had the right to use the slogan "less is more" in a way.
-
-Go is a goner now. I would want a static GC-based language to be as high level as possible, with a lot of batteries, but Go tries to reach a tiny low level space between C and Java, called "static Erlang". Compared to Java/C#, the Go ecosystem lacks a web framework and a desktop GUI library, despite some heroic efforts by many indie developers. [golibp2p](https://libp2p.io/implementations/) remains an impressive unique project, but it seems that Go is being overtaken by Rust there. Another example: Vite (a build tool for React) uses Rollup (Js) and esbuild (Go), [both are going to be replaced with Rolldown (Rust)](https://github.com/vitejs/vite/discussions/7622). Rust is needlessly complex, but it has null-protection, sum types, and a C-like fast runtime. Those of us, who were annoyed by the lack of static types in Node or Django, did not find peace with Go, we moved on to TypeScript. This also includes young developers like [Ben Davis](https://www.youtube.com/channel/UCFvPgPdb_emE_bpMZq6hmJQ) who did give Go a try.
-
-All the big 3D engines: Unity, Unreal, Godot, and [the rest](https://www.youtube.com/@gamefromscratch/videos) are beyond hopeless. Imagine you have a lot of man-years, but the problem is, you want to please everyone. So you now have to divide your resources by multiple 3D backends including the newest Vulkan, WebGPU, DX12, MoltenVK/Metal, 2D and 3D, the engine itself and the editor, a scripting language on top, high quality pipeline with RTX and hardware ray tracing vs reasonable default, games vs cinema, desktop, mobile, web, online asset stores, license tracking, with the need to communicate and test changes everywhere.
-
-Despite all that, it is surprising how much one man with persistence can do, and how cleanly a million lines of C++ (with Vulkan) can compile, see [AnKi 3D engine](https://github.com/godlikepanos/anki-3d-engine) by Panagiotis Christopoulos Charitos.
-
-All the desktop GUI frameworks have tiny fractured communities. I would bet on the web and React here. Figma lacks tools like [Fidget](https://github.com/treeform/fidget).
-
-Most of the text editors, with debuggers or not, are not great, except maybe VS Code which is a heavy IDE. Kilo, micro, nano, pico, Vim, Zed, [xi](https://github.com/xi-editor/xi-editor), ddd, [pudb](https://documen.tician.de/pudb/), [gdbgui](https://www.gdbgui.com/), gedit, LiteIDE, GoLand, [CodeLite](https://github.com/eranif/codelite), Geany... I used to be on the Vim side of things, but it takes ages to configure it once you move to another machine.
+1. Null-protection.
+2. Sum types.
+3. Modules and packages.
+4. C-like fast runtime.
+5. Massive adoption.

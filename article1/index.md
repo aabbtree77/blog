@@ -10,6 +10,6 @@ There is a lot of heavy compiler theory that people study for years. I will add 
 
 [Mugo (2021):](https://benhoyt.com/writings/mugo/) A subset of Go compiled to the x86-64 assembly, in Go.
 
-[The Art of Code (2022).](https://www.youtube.com/watch?v=gwLQMuTspxE) One of the most beautiful and entertaining presentations about computing models and programming languages.
+[The Art of Code (2022).](https://www.youtube.com/watch?v=gwLQMuTspxE) A beautiful presentation about weird programming languages.
 
-[mov (2013)](https://stackoverflow.com/questions/61048788/why-is-mov-turing-complete) and [movfuscator (2015).](https://github.com/Battelle/movfuscator) One of the remarkable brain twisters.
+[mov (2013)](https://stackoverflow.com/questions/61048788/why-is-mov-turing-complete) and [movfuscator (2015).](https://github.com/Battelle/movfuscator) A single Assembly instruction as a programming language.
