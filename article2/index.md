@@ -1,6 +1,6 @@
 # My Ubuntu Experience
 
-I began using Ubuntu around 2010. Tried Arch Linux for a short time, a year with Fedora, and another year with macOS (OS X Lion). Since 2014 I solely use Ubuntu:
+I began using Ubuntu around 2010. Tried Arch Linux for a short time, spent a year with Fedora, and another year with macOS (OS X Lion). Since 2014 I solely use Ubuntu:
 
 - Every time there is a major change somewhere in the desktop GUI technology, expect bugs and even black screens. What works well is a dual HD/SSD drive setup where most of your data will reside on a slow HD drive and the system on a faster SSD, with an Ubuntu USB stick nearby to reinstall the whole thing.
 
