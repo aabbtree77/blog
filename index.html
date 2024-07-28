@@ -15,63 +15,115 @@
         <h1 class="title">Blog</h1>
         
 <div class="article">
-    <h2>Parser/Compiler Links</h2>
-    <div class="summary"><p>There is a lot of heavy compiler theory that people study for years. I will add a few practical links here to get one started.</p>
+    <h2>Programming Links</h2>
+    <div class="summary"><p>A few ideas/resources that I have missed in my school/university years.</p>
 </div>
-    <div class="content"><p>There is a lot of heavy compiler theory that people study for years. I will add a few practical links here to get one started.</p>
+    <div class="content"><p>A few ideas/resources that I have missed in my school/university years.</p>
 
-<p><a href="https://github.com/ark-lang/ark">Ark (2015):</a> A static non-GC language written with Go and LLVM: FFI to C, OpenGL demo.</p>
-
-<p><a href="https://github.com/maierfelix/mini-js/tree/master">mini-js (2017):</a> &ldquo;Minimal self-hosted JavaScript compiler in 1k lines of code.&rdquo;</p>
-
-<p><a href="https://github.com/search?q=monkey+interpreter">Monkey (2018):</a> A minimal Js-like language implemented with a recursive descent parser, in Go. Lots of following!</p>
-
-<p><a href="https://benhoyt.com/writings/mugo/">Mugo (2021):</a> A subset of Go compiled to the x86-64 assembly, in Go.</p>
-
-<p><a href="https://www.youtube.com/watch?v=gwLQMuTspxE">The Art of Code (2022).</a> A beautiful presentation about weird programming languages.</p>
-
-<p><a href="https://stackoverflow.com/questions/61048788/why-is-mov-turing-complete">mov (2013)</a> and <a href="https://github.com/Battelle/movfuscator">movfuscator (2015).</a> A single Assembly instruction as a programming language.</p>
-</div>
-    <span class="read-more">Read more</span>
-</div>
-
-<div class="article">
-    <h2>My Ubuntu Experience</h2>
-    <div class="summary"><p>I began using Ubuntu around 2010. Tried Arch Linux for a short time, spent a year with Fedora, and another year with macOS (OS X Lion). Since 2014 I solely use Ubuntu:</p>
-</div>
-    <div class="content"><p>I began using Ubuntu around 2010. Tried Arch Linux for a short time, spent a year with Fedora, and another year with macOS (OS X Lion). Since 2014 I solely use Ubuntu:</p>
+<h3>Computing/Philosophy</h3>
 
 <ul>
-<li><p>Every time there is a significant change in the technology stack, expect bugs and even black screens. What works well is a dual HD/SSD drive setup where most of your data will reside on a slow HD drive and the system on a faster SSD, with an Ubuntu USB stick nearby to reinstall the whole thing.</p></li>
+<li><p>Carl Hewitt: <a href="https://youtu.be/7erJ1DV_Tlo?t=2368">&ldquo;The fundamental situation is that we do not know much and some of it is wrong&rdquo;</a>.</p></li>
 
-<li><p>&ldquo;sudo apt upgrade&rdquo; should never be run. It is very fragile. If there is a network glitch or you accidentally cancel the upgrade, you may lose the whole desktop environment or something equally bad like the network/sound drivers.</p></li>
+<li><p>Joe Armstrong: <a href="https://youtu.be/TTM_b7EJg5E?t=318">&ldquo;Remember, in a distributed system you never know how things are, you know how they were the last time they told you&rdquo;</a>.</p></li>
 
-<li><p>It is not a good idea to install a freshly released Ubuntu unless you want to be an unpaid beta tester.</p></li>
+<li><p>Rob Pike: <a href="https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html">&ldquo;Less is exponentially more&rdquo;</a>, <a href="https://www.youtube.com/watch?v=rFejpH_tAHM">&ldquo;Simplicity is complicated&rdquo;</a>.</p></li>
 
-<li><p>Many Windows-centric programs won&rsquo;t work. Unreal crashes all the time, but Unity is fine. TomTom (via wine) does not work at all. Whatsapp and Messenger still do not have fully working Ubuntu programs in the year 2024. Viber runs natively, kudos to them. wine remains to be a mess. Lately I could not install it without re-enabling Ubuntu updates which I usually disable.</p></li>
+<li><p>Guido van Rossum: <a href="https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/">&ldquo;I&rsquo;d rather write code than papers.&rdquo;</a></p></li>
 
-<li><p>Remote desktop access is horrid. Remmina won&rsquo;t hole-punch through. I have not tried Connections.</p></li>
+<li><p>Stephen Dolan: <a href="https://drwho.virtadpt.net/files/mov.pdf">&ldquo;mov is Turing-complete&rdquo;</a>. <a href="https://stackoverflow.com/questions/61048788/why-is-mov-turing-complete">SO</a>, <a href="https://github.com/Battelle/movfuscator">movfuscator</a>.</p></li>
+
+<li><p>Dylan Beattie: <a href="https://www.youtube.com/watch?v=gwLQMuTspxE">&ldquo;Midnight takes your heart and your soul.&rdquo;</a></p></li>
+
+<li><p>Gary Bernhardt: <a href="https://www.destroyallsoftware.com/talks/wat">&ldquo;Does anyone know, in Javascript, what array plus array is?&rdquo;</a></p></li>
 </ul>
 
-<p>P.S. Ubuntu desktop evolution:</p>
+<h3>Compilers</h3>
 
-<p>2004 - 2010: GNOME 2.</p>
+<ul>
+<li><p><a href="https://github.com/ark-lang/ark">Ark (2015):</a> A static non-GC language written with Go and LLVM: FFI to C, OpenGL demo.</p></li>
 
-<p>2011 - 2017: Unity (based on GNOME 3).</p>
+<li><p><a href="https://github.com/maierfelix/mini-js/tree/master">mini-js (2017):</a> &ldquo;Minimal self-hosted JavaScript compiler in 1k lines of code.&rdquo;</p></li>
 
-<p>2016: Vulkan becomes an option alongside OpenGL.</p>
+<li><p><a href="https://github.com/search?q=monkey+interpreter">Monkey (2018):</a> A minimal Js-like language implemented with a recursive descent parser, in Go. Lots of following!</p></li>
 
-<p>2017: GNOME 3, Wayland instead of Xorg.</p>
+<li><p><a href="https://benhoyt.com/writings/mugo/">Mugo (2021):</a> A subset of Go compiled to the x86-64 assembly, in Go.</p></li>
+</ul>
 
-<p>2018 - 2021: GNOME 3, back to Xorg.</p>
+<h3>Design</h3>
 
-<p>2019: NVIDIA drivers out of the box.</p>
+<ul>
+<li><p><a href="https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488">How to create a presentation in draw.io (2022).</a></p></li>
 
-<p>2021 - 2023: GNOME 40, Wayland.</p>
+<li><p><a href="https://dynomight.net/lists/">How I learned to stop worrying and structure all writing as a list (2023).</a></p></li>
 
-<p>2022: dxvk (1.10.3) pushes the ability to play Windows games to <a href="https://github.com/doitsujin/dxvk/issues/3789">another level</a>. Those that rely on the ms-store and xbox libs (Forza Horizon) are still beyond reach.</p>
+<li><p><a href="https://www.youtube.com/watch?v=qyomWr_C_jA">The Easy Way to Design Top Tier Websites (2024).</a></p></li>
+</ul>
 
-<p>2023 - 2024: GNOME40, Wayland, Flutter.</p>
+<h3>Impressive Software Projects</h3>
+
+<ul>
+<li><p>Ubuntu 22.04 desktop OS. Starts out in 2004, matures around 2020: NVIDIA drivers out of the box, GNOME 40 and Wayland finally settled, dxvk (1.10.3) pushes the ability to play Windows games to <a href="https://github.com/doitsujin/dxvk/issues/3789">another level</a>.</p>
+
+<p>Minor weaknesses: deb vs snap, Flutter in 24.04, remote desktop connections, the games which rely on ms-store and xbox win libs (Forza Horizon&hellip;), TomTom, Unreal, CAD, never run &ldquo;sudo apt upgrade&rdquo;, do not install a freshly released Ubuntu unless you want to be an unpaid beta tester.</p>
+
+<p>Have a dual HD/SSD drive setup where most of your data will reside on a slow HD drive and the system on a faster SSD, with an Ubuntu USB stick nearby to reinstall the whole thing.</p></li>
+
+<li><p>Chromium/Chrome, Viber, Blender. They run natively on Ubuntu.</p></li>
+
+<li><p><a href="https://en.wikipedia.org/wiki/Spintires">Spintires</a> run via wine.</p></li>
+
+<li><p><a href="https://drawio-app.com/blog/building-presentations-team-members-will-%F0%9F%A7%A1/">app.diagrams.net (draw.io)</a> to draw diagrams and make <a href="https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488">presentations</a>.</p></li>
+
+<li><p>golibp2p. See my <a href="https://github.com/aabbtree77/esp32-vpn">IoT</a> project for some uses and links.</p></li>
+
+<li><p><a href="https://fsharpforfunandprofit.com/">F#</a>. The best static GC language that nobody uses. Other solid efforts by M$: VS Code, TypeScript.</p></li>
+
+<li><p>Nim: The best static non-GC language that nobody uses.</p></li>
+
+<li><p>avr-gcc for <a href="https://en.wikipedia.org/wiki/AVR_microcontrollers">the AVR microcontrollers</a>.</p></li>
+
+<li><p>Python, conda, matplotlib, pytorch.</p></li>
+
+<li><p>TypeScript and React for GUIs. Still lacking automated layout software and a decent full stack framework.</p></li>
+
+<li><p><a href="https://github.com/godlikepanos/anki-3d-engine">AnKi 3D engine</a>. The code is virtually one-man army, more than a million lines of C++ and Vulkan that compile cleanly on Ubuntu!</p></li>
+
+<li><p><a href="https://www.chessprogramming.org/Fabien_Letouzey#Fruit">Fruit</a>, <a href="https://github.com/lichess-org/lila">lichess.org</a>, <a href="https://github.com/LeelaChessZero/lc0">lc0</a>, <a href="https://github.com/official-stockfish/Stockfish">Stockfish</a>, <a href="https://github.com/TCEC-Chess">TCEC</a>.</p></li>
+</ul>
+
+<h3>Puzzles</h3>
+
+<ul>
+<li><p><a href="https://en.wikipedia.org/wiki/Grid_method_multiplication">The box method</a> and its &ldquo;inverse&rdquo; discovered in <a href="https://youtu.be/z5-EEkgnvAY?t=1077">&ldquo;Al-Jabr&rdquo; by Al-Khwarizmi, the 9th century</a>.</p></li>
+
+<li><p><a href="https://en.wikipedia.org/wiki/Dimensional_analysis">Dimensional analysis</a>. What is the temperature at the center of the Sun, given the star’s mass, radius, the gravitational constant
+, and assuming it is a ball of hydrogen? The answer is 20 million kelvins. See e.g. B.N. Ivanov. Laws of Physics (1986, in Russian), page 286. This is also roughly the temperature of the entire universe around <a href="https://en.wikipedia.org/wiki/Chronology_of_the_universe">100 - 1000 seconds after the Big Bang</a>, when there are no atoms and stars yet.</p></li>
+</ul>
+
+<h3>&ldquo;Human Stack Overflow&rdquo;</h3>
+
+<ul>
+<li><p>Ettore Majorana</p></li>
+
+<li><p>Alexander Grothendieck</p></li>
+
+<li><p>Bobby Fischer</p></li>
+
+<li><p>Linn Berggren</p></li>
+
+<li><p>Marilyn Monroe, Elvis Presley, Michael Jackson&hellip;</p></li>
+
+<li><p>Sergei Mavrodi</p></li>
+
+<li><p>Satoshi Nakamoto</p></li>
+
+<li><p>Stefan Zweig and Lotte Altmann</p></li>
+
+<li><p>Jean Seberg and Romain Gary</p></li>
+
+<li><p><a href="https://www.youtube.com/watch?v=bKpulDFGrhU">Sadhus</a></p></li>
+</ul>
 </div>
     <span class="read-more">Read more</span>
 </div>
