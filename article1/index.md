@@ -8,7 +8,7 @@ A few ideas/resources that I have missed in my school/university years.
 
 - [Joe Armstrong](https://youtu.be/TTM_b7EJg5E?t=318): "Remember, in a distributed system you never know how things are, you know how they were the last time they told you."
 
-- Rob Pike: ["Less is exponentially more"](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html), ["Simplicity is complicated."](https://www.youtube.com/watch?v=rFejpH_tAHM)
+- Rob Pike: ["Less is exponentially more"](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html), ["Simplicity is complicated"](https://www.youtube.com/watch?v=rFejpH_tAHM).
 
 - [Guido van Rossum](https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/): "I'd rather write code than papers."
 
@@ -42,13 +42,11 @@ A few ideas/resources that I have missed in my school/university years.
 
 - Ubuntu 22.04 desktop OS. Starts out in 2004, matures around 2020: NVIDIA drivers out of the box, GNOME 40 and Wayland, dxvk (1.10.3) pushes the PC games to [another level](https://github.com/doitsujin/dxvk/issues/3789).
 
-    Minor weaknesses: deb vs snap, Flutter in 24.04, remote desktop connections, the games which rely on ms-store and xbox win libs (Forza Horizon...), TomTom, Unreal, CAD, extremely fragile "sudo apt upgrade", buggy fresh releases.
+    Minor weaknesses: deb vs snap, Flutter in 24.04, remote desktop connections, wine does not support ms-store and xbox win libs (Forza Horizon...), TomTom, Unreal, CAD, extremely fragile "sudo apt upgrade", buggy fresh releases.
     
     Have a dual HD/SSD drive setup where most of your data will reside on a slow HD drive and the system on a faster SSD, with an Ubuntu USB stick nearby to reinstall the whole thing.
 
 - Chromium/Chrome, Viber, Blender run natively on Ubuntu.
-
-- [Spintires](https://en.wikipedia.org/wiki/Spintires) run via wine.
 
 - [app.diagrams.net (draw.io)](https://drawio-app.com/blog/building-presentations-team-members-will-%F0%9F%A7%A1/) to make diagrams and [presentations](https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488).
 
@@ -66,6 +64,8 @@ A few ideas/resources that I have missed in my school/university years.
 
 - Chess software: [Fruit](https://www.chessprogramming.org/Fabien_Letouzey#Fruit), [lichess.org](https://github.com/lichess-org/lila), [lc0](https://github.com/LeelaChessZero/lc0), [Stockfish](https://github.com/official-stockfish/Stockfish), [TCEC](https://github.com/TCEC-Chess), [CounterGo](https://github.com/ChizhovVadim/CounterGo), [Arena Chess GUI](http://www.playwitharena.de/#Linux) which is written with the GTK2, in Free Pascal (Lazarus)!
 
+- [Spintires (2014-2020)](https://en.wikipedia.org/wiki/Spintires), [Inside (2016)](https://en.wikipedia.org/wiki/Inside_(video_game)) run via wine. Let's hope that the 2024 remake of [Until Dawn](https://en.wikipedia.org/wiki/Until_Dawn) will work on Ubuntu too.
+
 - ChatGPT...
 
 ### Puzzles
@@ -76,22 +76,12 @@ A few ideas/resources that I have missed in my school/university years.
 
 ### "Human Stack Overflow"
 
-- Ettore Majorana
-
-- Alexander Grothendieck
-
-- Bobby Fischer
-
-- Linn Berggren
+- Ettore Majorana, Alexander Grothendieck, Bobby Fischer, Linn Berggren...
 
 - Marilyn Monroe, Elvis Presley, Michael Jackson...
 
-- Sergei Mavrodi
+- Sergei Mavrodi, Satoshi Nakamoto.
 
-- Satoshi Nakamoto
-
-- Stefan Zweig and Lotte Altmann
-
-- Jean Seberg and Romain Gary
+- Stefan Zweig and Lotte Altmann, Jean Seberg and Romain Gary
 
 - [Sadhus](https://www.youtube.com/watch?v=bKpulDFGrhU)
