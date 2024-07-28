@@ -18,6 +18,10 @@ A few ideas/resources that I have missed in my school/university years.
 
 - Gary Bernhardt: ["Does anyone know, in Javascript, what array plus array is?"](https://www.destroyallsoftware.com/talks/wat)
 
+- Brian Kernighan and Bill Plauger: “Everyone knows that debugging is twice as hard as writing a program in the first place. So if you’re as clever as you can be when you write it, how will you ever debug it?”
+
+- Daniel H. H. Ingalls: [“Operating System: An operating system is a collection of things that don’t fit into a language. There shouldn’t be one.”](https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html)
+
 ### Compilers
 
 - [Ark (2015):](https://github.com/ark-lang/ark) A static non-GC language written with Go and LLVM: FFI to C, OpenGL demo.
@@ -64,7 +68,7 @@ A few ideas/resources that I have missed in my school/university years.
 
 - [AnKi 3D engine](https://github.com/godlikepanos/anki-3d-engine). The code is virtually one-man army, more than a million lines of C++ and Vulkan that compile cleanly on Ubuntu!
 
-- [Fruit](https://www.chessprogramming.org/Fabien_Letouzey#Fruit), [lichess.org](https://github.com/lichess-org/lila), [lc0](https://github.com/LeelaChessZero/lc0), [Stockfish](https://github.com/official-stockfish/Stockfish), [TCEC](https://github.com/TCEC-Chess).
+- [Fruit](https://www.chessprogramming.org/Fabien_Letouzey#Fruit), [lichess.org](https://github.com/lichess-org/lila), [lc0](https://github.com/LeelaChessZero/lc0), [Stockfish](https://github.com/official-stockfish/Stockfish), [TCEC](https://github.com/TCEC-Chess), [CounterGo](https://github.com/ChizhovVadim/CounterGo).
 
 ### Puzzles
 
