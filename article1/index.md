@@ -38,41 +38,35 @@ A few ideas/resources that I have missed in my school/university years.
 
 - The Easy Way to Design Top Tier Websites [(2024)](https://www.youtube.com/watch?v=qyomWr_C_jA).
 
-### Impressive Software Projects
+### Underrated Software
 
 - Ubuntu 22.04 desktop OS. Starts out in 2004, matures around 2020: NVIDIA drivers out of the box, GNOME 40 and Wayland, dxvk (1.10.3) pushes the PC games to [another level](https://github.com/doitsujin/dxvk/issues/3789).
 
-    Minor weaknesses: deb vs snap, Flutter in 24.04, remote desktop connections, wine does not support ms-store and xbox win libs (Forza Horizon...), TomTom, Unreal, CAD, extremely fragile "sudo apt upgrade", buggy fresh releases.
-    
-    Have a dual HD/SSD drive setup where most of your data will reside on a slow HD drive and the system on a faster SSD, with an Ubuntu USB stick nearby to reinstall the whole thing.
-
-- Chromium/Chrome, Viber, Blender run natively on Ubuntu.
+    Minor weaknesses: deb vs snap, Flutter in 24.04, remote desktop connections, wine does not support ms-store and xbox win libs (Forza Horizon...), no TomTom, Unreal, CAD, WhatsApp, Messenger, but Viber runs natively. Fragile "sudo apt upgrade", buggy rushed releases.
 
 - [app.diagrams.net (draw.io)](https://drawio-app.com/blog/building-presentations-team-members-will-%F0%9F%A7%A1/) to make diagrams and [presentations](https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488).
 
-- golibp2p. See my [IoT](https://github.com/aabbtree77/esp32-vpn) project for some uses and links.
+- golibp2p. The ability to send a message from code to code, for free. See my [IoT](https://github.com/aabbtree77/esp32-vpn) project for some uses and links.
 
-- [F#](https://fsharpforfunandprofit.com/). The best static GC language that nobody uses. Other solid efforts by M$: TypeScript, VS Code.
+- [F#](https://fsharpforfunandprofit.com/). The best static GC language that nobody uses.
 
 - Nim: The best static non-GC language that nobody uses.
 
-- Python, conda, matplotlib, pytorch.
-
-- TypeScript and React for the web and desktop GUIs. Still lacking a decent metaframework unless one is into Next.js.
-
 - [AnKi 3D engine](https://github.com/godlikepanos/anki-3d-engine). More than a million lines of C++ and Vulkan compile cleanly on Ubuntu.
 
-- Chess software: [Fruit](https://www.chessprogramming.org/Fabien_Letouzey#Fruit), [lichess.org](https://github.com/lichess-org/lila), [lc0](https://github.com/LeelaChessZero/lc0), [Stockfish](https://github.com/official-stockfish/Stockfish), [TCEC](https://github.com/TCEC-Chess), [CounterGo](https://github.com/ChizhovVadim/CounterGo), [Arena Chess GUI](http://www.playwitharena.de/#Linux) which is written with the GTK2, in Free Pascal (Lazarus)!
+- Chess software: [Fruit](https://www.chessprogramming.org/Fabien_Letouzey#Fruit), [lichess.org](https://github.com/lichess-org/lila), [lc0](https://github.com/LeelaChessZero/lc0), [Stockfish](https://github.com/official-stockfish/Stockfish), [TCEC](https://github.com/TCEC-Chess), [CounterGo](https://github.com/ChizhovVadim/CounterGo), [Arena Chess GUI](http://www.playwitharena.de/#Linux).
 
 - [Spintires (2014-2020)](https://en.wikipedia.org/wiki/Spintires), [Inside (2016)](https://en.wikipedia.org/wiki/Inside_(video_game)) run via wine. Let's hope that the 2024 remake of [Until Dawn](https://en.wikipedia.org/wiki/Until_Dawn) will work on Ubuntu too.
 
 - ChatGPT...
 
-### Puzzles
+### Algebra
 
-- [The box method](https://en.wikipedia.org/wiki/Grid_method_multiplication) and its "inverse" discovered in ["Al-Jabr" by Al-Khwarizmi, the 9th century](https://youtu.be/z5-EEkgnvAY?t=1077).
+- Inverse of [the box method](https://en.wikipedia.org/wiki/Grid_method_multiplication) discovered in ["Al-Jabr" by Al-Khwarizmi, the 9th century](https://youtu.be/z5-EEkgnvAY?t=1077).
 
-- [Dimensional analysis](https://en.wikipedia.org/wiki/Dimensional_analysis). What is the temperature at the center of the Sun, given the star's mass, radius, the gravitational constant, and assuming it is a ball of hydrogen? The answer is 20 million kelvins. See B.N. Ivanov. Laws of Physics (1986, in Russian), page 286. This is also roughly the temperature of the entire universe around [100 - 1000 seconds after the Big Bang](https://en.wikipedia.org/wiki/Chronology_of_the_universe), when there are no atoms and stars yet.
+- [Dimensional analysis](https://en.wikipedia.org/wiki/Dimensional_analysis). What is the temperature at the center of the Sun, given the star's mass, radius, the gravitational constant, and assuming it is a ball of hydrogen? See B.N. Ivanov. Laws of Physics (1986, in Russian), page 286.
+
+- Grid out of symbols. Given $H=(X^2+P^2)/2$, $[X,P] = ih\nu I$, and assuming that $e$ is an eigenvalue of $H$, $e-h\nu$ is also an eigenvalue, see V. Rojansky, Introductory QM, Chapter 11 (1938).
 
 ### "Human Stack Overflow"
 
@@ -82,6 +76,6 @@ A few ideas/resources that I have missed in my school/university years.
 
 - Sergei Mavrodi, Satoshi Nakamoto.
 
-- Stefan Zweig and Lotte Altmann, Jean Seberg and Romain Gary
+- Stefan Zweig and Lotte Altmann, Jean Seberg and Romain Gary.
 
-- [Sadhus](https://www.youtube.com/watch?v=bKpulDFGrhU)
+- [Sadhu](https://www.youtube.com/watch?v=bKpulDFGrhU).
