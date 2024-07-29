@@ -9,6 +9,23 @@
     <link rel="icon" href="imgs/rg.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+	<script>
+	MathJax = {
+	  tex: {
+	    inlineMath: [['$', '$'], ['\\(', '\\)']]
+	  },
+	  svg: {
+	    fontCache: 'global'
+	  },
+	  loader: {load: ['[tex]/mathtools']},
+	  tex: {packages: {'[+]': ['mathtools']}}
+	};
+	</script>
+	<script type="text/javascript" id="MathJax-script" async
+	  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+	</script>    
+    
 </head>
 <body>
     <div class="container">
@@ -73,9 +90,9 @@
 
 <li><p>golibp2p. The ability to send a message from code to code, for free. See my <a href="https://github.com/aabbtree77/esp32-vpn">IoT</a> project for some uses and links.</p></li>
 
-<li><p><a href="https://fsharpforfunandprofit.com/">F#</a>. The best static GC language that nobody uses.</p></li>
+<li><p><a href="https://fsharpforfunandprofit.com/">F#</a>. The best static GC language that nobody uses. Unlucky with the platform.</p></li>
 
-<li><p>Nim: The best static non-GC language that nobody uses.</p></li>
+<li><p>Nim: The best static non-GC language that nobody uses. It lacks sum types and is a big mess when it comes to pointers and compile time, just like anything else in this space. However, it gets the basics right and becomes exceptionally productive when most of its advanced features are simply not used.</p></li>
 
 <li><p><a href="https://github.com/godlikepanos/anki-3d-engine">AnKi 3D engine</a>. More than a million lines of C++ and Vulkan compile cleanly on Ubuntu.</p></li>
 

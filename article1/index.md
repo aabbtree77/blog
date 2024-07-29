@@ -48,9 +48,9 @@ A few ideas/resources that I have missed in my school/university years.
 
 - golibp2p. The ability to send a message from code to code, for free. See my [IoT](https://github.com/aabbtree77/esp32-vpn) project for some uses and links.
 
-- [F#](https://fsharpforfunandprofit.com/). The best static GC language that nobody uses.
+- [F#](https://fsharpforfunandprofit.com/). The best static GC language that nobody uses. Unlucky with the platform.
 
-- Nim: The best static non-GC language that nobody uses.
+- Nim: The best static non-GC language that nobody uses. It lacks sum types and is a big mess when it comes to pointers and compile time, just like anything else in this space. However, it gets the basics right and becomes exceptionally productive when most of its advanced features are simply not used.
 
 - [AnKi 3D engine](https://github.com/godlikepanos/anki-3d-engine). More than a million lines of C++ and Vulkan compile cleanly on Ubuntu.
 
