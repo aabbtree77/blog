@@ -37,24 +37,22 @@
 </div>
     <div class="content"><p>A few ideas/resources that I have missed in my school/university years.</p>
 
-<h3>Computing/Philosophy</h3>
+<h3>Philosophy</h3>
 
 <ul>
-<li><p><a href="https://youtu.be/7erJ1DV_Tlo?t=2368">Carl Hewitt</a>: &ldquo;The fundamental situation is that we do not know much and some of it is wrong.&rdquo;</p></li>
+<li><p><a href="https://youtu.be/7erJ1DV_Tlo?t=2368">Carl Hewitt</a>: &ldquo;We do not know much and some of it is wrong.&rdquo;</p></li>
 
-<li><p><a href="https://youtu.be/TTM_b7EJg5E?t=318">Joe Armstrong</a>: &ldquo;Remember, in a distributed system you never know how things are, you know how they were the last time they told you.&rdquo;</p></li>
-
-<li><p>Rob Pike: <a href="https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html">&ldquo;Less is exponentially more&rdquo;</a>, <a href="https://www.youtube.com/watch?v=rFejpH_tAHM">&ldquo;Simplicity is complicated&rdquo;</a>.</p></li>
+<li><p><a href="https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html">Rob Pike</a>: &ldquo;Less is exponentially more.&rdquo;</p></li>
 
 <li><p><a href="https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/">Guido van Rossum</a>: &ldquo;I&rsquo;d rather write code than papers.&rdquo;</p></li>
+</ul>
 
-<li><p>Stephen Dolan: <a href="https://drwho.virtadpt.net/files/mov.pdf">&ldquo;mov is Turing-complete&rdquo;</a>. <a href="https://stackoverflow.com/questions/61048788/why-is-mov-turing-complete">SO</a>, <a href="https://github.com/Battelle/movfuscator">movfuscator</a>.</p></li>
+<h3>Distributed Systems</h3>
 
-<li><p><a href="https://www.youtube.com/watch?v=gwLQMuTspxE">Dylan Beattie</a>: &ldquo;Midnight takes your heart and your soul.&rdquo;</p></li>
+<ul>
+<li><p><a href="https://go.dev/blog/waza-talk">Rob Pike</a>: The problem of moving obsolete manuals to the incinerator. Manuals, gophers, carts, and the incinerator. Load, move, unload, return. Another good example for concurrency/parallelism is a chess simul between many amateurs and a few GMs or just a single GM.</p></li>
 
-<li><p><a href="https://www.destroyallsoftware.com/talks/wat">Gary Bernhardt</a>: &ldquo;Does anyone know, in Javascript, what array plus array is?&rdquo;</p></li>
-
-<li><p><a href="https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html">Daniel H. H. Ingalls</a>: &ldquo;An operating system is a collection of things that don’t fit into a language. There shouldn’t be one.&rdquo;</p></li>
+<li><p><a href="https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go">Sameer Ajmani</a>: &ldquo;Simulating a Real-World System in Go.&rdquo;</p></li>
 </ul>
 
 <h3>Compilers</h3>
@@ -79,38 +77,23 @@
 <li><p>The Easy Way to Design Top Tier Websites <a href="https://www.youtube.com/watch?v=qyomWr_C_jA">(2024)</a>.</p></li>
 </ul>
 
-<h3>Underrated Software</h3>
+<h3>Complex Projects that Make Sense (Sort of)</h3>
 
 <ul>
-<li><p>Ubuntu 22.04 desktop OS. Starts out in 2004, matures around 2020: NVIDIA drivers out of the box, GNOME 40 and Wayland, dxvk (1.10.3) pushes the PC games to <a href="https://github.com/doitsujin/dxvk/issues/3789">another level</a>.</p>
+<li><p><a href="https://libp2p.io/">libp2p</a>. Send a message from any remote computer to any remote computer without any paid 3rd party services. It takes 70 KLOC of Go, no 100% message delivery guarantee, very slow, but it works and is enough to build entire new worlds like Ethereum.
+Lots of digital wallets, crypto currencies with entire platforms and new sorts of databases, but we still do not have e-voting.</p></li>
 
-<p>Minor weaknesses: deb vs snap, Flutter in 24.04, remote desktop connections, wine does not support ms-store and xbox win libs (Forza Horizon&hellip;), no TomTom, Unreal, CAD, WhatsApp, Messenger, but Viber runs natively. Fragile &ldquo;sudo apt upgrade&rdquo;, buggy rushed releases.</p></li>
-
-<li><p><a href="https://drawio-app.com/blog/building-presentations-team-members-will-%F0%9F%A7%A1/">app.diagrams.net (draw.io)</a> to make diagrams and <a href="https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488">presentations</a>.</p></li>
-
-<li><p>golibp2p. The ability to send a message from code to code, for free. See my <a href="https://github.com/aabbtree77/esp32-vpn">IoT</a> project for some uses and links.</p></li>
-
-<li><p><a href="https://fsharpforfunandprofit.com/">F#</a>. The best static GC language that nobody uses. Unlucky with the platform.</p></li>
-
-<li><p>Nim: The best static non-GC language that nobody uses. It lacks sum types and is a big mess when it comes to pointers and compile time, just like anything else in this space. However, it gets the basics right and becomes exceptionally productive when most of its advanced features are simply not used.</p></li>
-
-<li><p><a href="https://github.com/godlikepanos/anki-3d-engine">AnKi 3D engine</a>. More than a million lines of C++ and Vulkan compile cleanly on Ubuntu.</p></li>
-
-<li><p>Chess software: <a href="https://www.chessprogramming.org/Fabien_Letouzey#Fruit">Fruit</a>, <a href="https://github.com/lichess-org/lila">lichess.org</a>, <a href="https://github.com/LeelaChessZero/lc0">lc0</a>, <a href="https://github.com/official-stockfish/Stockfish">Stockfish</a>, <a href="https://github.com/TCEC-Chess">TCEC</a>, <a href="https://github.com/ChizhovVadim/CounterGo">CounterGo</a>, <a href="http://www.playwitharena.de/#Linux">Arena Chess GUI</a>.</p></li>
-
-<li><p><a href="https://en.wikipedia.org/wiki/Spintires">Spintires (2014-2020)</a>, <a href="https://en.wikipedia.org/wiki/Inside_(video_game)">Inside (2016)</a> run via wine. Let&rsquo;s hope that the 2024 remake of <a href="https://en.wikipedia.org/wiki/Until_Dawn">Until Dawn</a> will work on Ubuntu too.</p></li>
-
-<li><p>ChatGPT&hellip;</p></li>
+<li><p><a href="https://github.com/godlikepanos/anki-3d-engine">AnKi 3D engine</a>. We definitely need something better than Unity/Unreal/Godot or say Blender&rsquo;s GPL internals, in 3D. This engine is a rare example of massive C++ and Vulkan code with a clean compilation. One could study and document this code, build examples, the 3D editor, community.</p></li>
 </ul>
+
+<p>Something inside me resists going deeper into these code bases. So much complexity.</p>
 
 <h3>Algebra</h3>
 
 <ul>
-<li><p>Inverse of <a href="https://en.wikipedia.org/wiki/Grid_method_multiplication">the box method</a> discovered in <a href="https://youtu.be/z5-EEkgnvAY?t=1077">&ldquo;Al-Jabr&rdquo; by Al-Khwarizmi, the 9th century</a>.</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Grid_method_multiplication">The box method</a> advanced to solve a quadratic equation in <a href="https://youtu.be/z5-EEkgnvAY?t=1077">&ldquo;Al-Jabr&rdquo; by Al-Khwarizmi, the 9th century</a>. I missed these two concepts entirely in my school years. A simple way to multiply two numbers (we memorized some silly mnemonic rules instead because they were &ldquo;faster&rdquo;), and the original method of Al-Khwarizmi, emphasized by Торвальд Олафсен. When algebra was still geometry and practical problems, not Haskell.</p></li>
 
 <li><p><a href="https://en.wikipedia.org/wiki/Dimensional_analysis">Dimensional analysis</a>. What is the temperature at the center of the Sun, given the star&rsquo;s mass, radius, the gravitational constant, and assuming it is a ball of hydrogen? See B.N. Ivanov. Laws of Physics (1986, in Russian), page 286.</p></li>
-
-<li><p>Grid out of symbols. Given <span class="math inline">\(H=(X^2+P^2)/2\)</span>, <span class="math inline">\([X,P] = ih\nu I\)</span>, and assuming that <span class="math inline">\(e\)</span> is an eigenvalue of <span class="math inline">\(H\)</span>, <span class="math inline">\(e-h\nu\)</span> is also an eigenvalue, see V. Rojansky, Introductory QM, Chapter 11 (1938).</p></li>
 </ul>
 
 <h3>&ldquo;Human Stack Overflow&rdquo;</h3>
@@ -120,7 +103,7 @@
 
 <li><p>Marilyn Monroe, Elvis Presley, Michael Jackson&hellip;</p></li>
 
-<li><p>Sergei Mavrodi, Satoshi Nakamoto.</p></li>
+<li><p>Sergei Mavrodi.</p></li>
 
 <li><p>Stefan Zweig and Lotte Altmann, Jean Seberg and Romain Gary.</p></li>
 

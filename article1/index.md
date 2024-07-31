@@ -2,23 +2,19 @@
 
 A few ideas/resources that I have missed in my school/university years.
 
-### Computing/Philosophy
+### Philosophy
 
-- [Carl Hewitt](https://youtu.be/7erJ1DV_Tlo?t=2368): "The fundamental situation is that we do not know much and some of it is wrong."
+- [Carl Hewitt](https://youtu.be/7erJ1DV_Tlo?t=2368): "We do not know much and some of it is wrong."
 
-- [Joe Armstrong](https://youtu.be/TTM_b7EJg5E?t=318): "Remember, in a distributed system you never know how things are, you know how they were the last time they told you."
-
-- Rob Pike: ["Less is exponentially more"](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html), ["Simplicity is complicated"](https://www.youtube.com/watch?v=rFejpH_tAHM).
+- [Rob Pike](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html): "Less is exponentially more."
 
 - [Guido van Rossum](https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/): "I'd rather write code than papers."
 
-- Stephen Dolan: ["mov is Turing-complete"](https://drwho.virtadpt.net/files/mov.pdf). [SO](https://stackoverflow.com/questions/61048788/why-is-mov-turing-complete), [movfuscator](https://github.com/Battelle/movfuscator).
+### Distributed Systems
 
-- [Dylan Beattie](https://www.youtube.com/watch?v=gwLQMuTspxE): "Midnight takes your heart and your soul."
+- [Rob Pike](https://go.dev/blog/waza-talk): The problem of moving obsolete manuals to the incinerator. Manuals, gophers, carts, and the incinerator. Load, move, unload, return. Another good example for concurrency/parallelism is a chess simul between many amateurs and a few GMs or just a single GM.
 
-- [Gary Bernhardt](https://www.destroyallsoftware.com/talks/wat): "Does anyone know, in Javascript, what array plus array is?"
-
-- [Daniel H. H. Ingalls](https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html): "An operating system is a collection of things that don’t fit into a language. There shouldn’t be one."
+- [Sameer Ajmani](https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go): "Simulating a Real-World System in Go."  
 
 ### Compilers
 
@@ -38,35 +34,20 @@ A few ideas/resources that I have missed in my school/university years.
 
 - The Easy Way to Design Top Tier Websites [(2024)](https://www.youtube.com/watch?v=qyomWr_C_jA).
 
-### Underrated Software
+### Complex Projects that Make Sense (Sort of)
 
-- Ubuntu 22.04 desktop OS. Starts out in 2004, matures around 2020: NVIDIA drivers out of the box, GNOME 40 and Wayland, dxvk (1.10.3) pushes the PC games to [another level](https://github.com/doitsujin/dxvk/issues/3789).
+- [libp2p](https://libp2p.io/). Send a message from any remote computer to any remote computer without any paid 3rd party services. It takes 70 KLOC of Go, no 100% message delivery guarantee, very slow, but it works and is enough to build entire new worlds like Ethereum. 
+Lots of digital wallets, crypto currencies with entire platforms and new sorts of databases, but we still do not have e-voting. 
 
-    Minor weaknesses: deb vs snap, Flutter in 24.04, remote desktop connections, wine does not support ms-store and xbox win libs (Forza Horizon...), no TomTom, Unreal, CAD, WhatsApp, Messenger, but Viber runs natively. Fragile "sudo apt upgrade", buggy rushed releases.
+- [AnKi 3D engine](https://github.com/godlikepanos/anki-3d-engine). We definitely need something better than Unity/Unreal/Godot or say Blender's GPL internals, in 3D. This engine is a rare example of massive C++ and Vulkan code with a clean compilation. One could study and document this code, build examples, the 3D editor, community. 
 
-- [app.diagrams.net (draw.io)](https://drawio-app.com/blog/building-presentations-team-members-will-%F0%9F%A7%A1/) to make diagrams and [presentations](https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488).
-
-- golibp2p. The ability to send a message from code to code, for free. See my [IoT](https://github.com/aabbtree77/esp32-vpn) project for some uses and links.
-
-- [F#](https://fsharpforfunandprofit.com/). The best static GC language that nobody uses. Unlucky with the platform.
-
-- Nim: The best static non-GC language that nobody uses. It lacks sum types and is a big mess when it comes to pointers and compile time, just like anything else in this space. However, it gets the basics right and becomes exceptionally productive when most of its advanced features are simply not used.
-
-- [AnKi 3D engine](https://github.com/godlikepanos/anki-3d-engine). More than a million lines of C++ and Vulkan compile cleanly on Ubuntu.
-
-- Chess software: [Fruit](https://www.chessprogramming.org/Fabien_Letouzey#Fruit), [lichess.org](https://github.com/lichess-org/lila), [lc0](https://github.com/LeelaChessZero/lc0), [Stockfish](https://github.com/official-stockfish/Stockfish), [TCEC](https://github.com/TCEC-Chess), [CounterGo](https://github.com/ChizhovVadim/CounterGo), [Arena Chess GUI](http://www.playwitharena.de/#Linux).
-
-- [Spintires (2014-2020)](https://en.wikipedia.org/wiki/Spintires), [Inside (2016)](https://en.wikipedia.org/wiki/Inside_(video_game)) run via wine. Let's hope that the 2024 remake of [Until Dawn](https://en.wikipedia.org/wiki/Until_Dawn) will work on Ubuntu too.
-
-- ChatGPT...
+Something inside me resists going deeper into these code bases. So much complexity.
 
 ### Algebra
 
-- Inverse of [the box method](https://en.wikipedia.org/wiki/Grid_method_multiplication) discovered in ["Al-Jabr" by Al-Khwarizmi, the 9th century](https://youtu.be/z5-EEkgnvAY?t=1077).
+- [The box method](https://en.wikipedia.org/wiki/Grid_method_multiplication) advanced to solve a quadratic equation in ["Al-Jabr" by Al-Khwarizmi, the 9th century](https://youtu.be/z5-EEkgnvAY?t=1077). I missed these two concepts entirely in my school years. A simple way to multiply two numbers (we memorized some silly mnemonic rules instead because they were "faster"), and the original method of Al-Khwarizmi, emphasized by Торвальд Олафсен. When algebra was still geometry and practical problems, not Haskell.
 
 - [Dimensional analysis](https://en.wikipedia.org/wiki/Dimensional_analysis). What is the temperature at the center of the Sun, given the star's mass, radius, the gravitational constant, and assuming it is a ball of hydrogen? See B.N. Ivanov. Laws of Physics (1986, in Russian), page 286.
-
-- Grid out of symbols. Given $H=(X^2+P^2)/2$, $[X,P] = ih\nu I$, and assuming that $e$ is an eigenvalue of $H$, $e-h\nu$ is also an eigenvalue, see V. Rojansky, Introductory QM, Chapter 11 (1938).
 
 ### "Human Stack Overflow"
 
@@ -74,7 +55,7 @@ A few ideas/resources that I have missed in my school/university years.
 
 - Marilyn Monroe, Elvis Presley, Michael Jackson...
 
-- Sergei Mavrodi, Satoshi Nakamoto.
+- Sergei Mavrodi.
 
 - Stefan Zweig and Lotte Altmann, Jean Seberg and Romain Gary.
 
