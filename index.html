@@ -71,45 +71,6 @@
 </div>
     <span class="read-more">Read more</span>
 </div>
-
-<div class="article">
-    <h2>TypeScript and Golang Ecosystems</h2>
-    <div class="summary"><p>Let me provide an outsider&rsquo;s view to these two ecosystems.</p>
-</div>
-    <div class="content"><p>Let me provide an outsider&rsquo;s view to these two ecosystems.</p>
-
-<h3>TypeScript</h3>
-
-<ul>
-<li><p>Stuff built with it: tutorials <a href="https://www.youtube.com/watch?v=ucX2zXAZ1I0">how to build stuff with it</a>&hellip; VS Code, Excalidraw, Babylon.js, <a href="https://github.com/jupyterlab/jupyterlab">JupyterLab</a>, <a href="https://www.gdbgui.com/howitworks/">gdbgui</a>. Predominantly GUIs.</p></li>
-
-<li><p>Unusually high levels of self-inflicted pain: serverless, headless, monorepo constraints (backend-frontend fusion), enshittified astroturfed 3rd party APIs and SDKs, DDOS stories, old and new modules <a href="https://codingforseo.com/blog/mjs-vs-cjs-files/">(.js, .cjs, .mjs)</a>, external types (.ts, .d.ts, jsdoc), not accepting JSX (.tsx, .jsx) as part of the Js/Ts standard, &ldquo;mutation management&rdquo; frameworks, frameworks within frameworks, metaframeworks&hellip;</p></li>
-
-<li><p>Still no compiler or cross-compiler to a binary like Go. Ts is transpiled to Js, the latter is then JIT-compiled to a binary, but these are known to be memory hogs and the compilation and bundling is not as seamless as in Go. A minimal RAM requirement for a Ts app is <a href="https://www.youtube.com/watch?v=gNDBwxeBrF4&amp;t=2s">100MB</a> which is 10x more than in Go.</p></li>
-
-<li><p>Types are always a hindrance in the presence of generics and <a href="https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/">colored functions</a>. In Ts apps, we also get an extra dimension of types vs validation, typed or validated .env parameters, routes, REST API, forms, SQL. Untyped libs, VS Code server type crashes and restarts, <a href="https://github.com/type-challenges/type-challenges">type gymnastics</a>, <a href="https://x.com/dummdidumm_/status/1639394200872529925">back to Js with JSDoc stories</a>.</p></li>
-
-<li><p>A solid helpful sharing community: <a href="https://www.youtube.com/@joshtriedcoding">@joshtriedcoding</a>, <a href="https://www.youtube.com/@bmdavis419/videos">@bmdavis419</a>, <a href="https://www.youtube.com/@YourAverageTechBro">@YourAverageTechBro</a>, <a href="https://www.youtube.com/@marc-lou">@marc-lou</a>, <a href="https://syntax.fm/">syntax.fm</a>, <a href="https://www.youtube.com/@codewithantonio/videos">@codewithantonio</a>&hellip; They do not always emphasize that the video is actually an ad to a paid 3rd party service which the author is not using in his main projects.</p></li>
-
-<li><p>Bottom line: GUIs are harder than it seems. Ts presents a modern way to build them, with a massive user base. Notice, however, that Figma is written in C++ compiled to asm.js, and Ubuntu adds <a href="https://ubuntu.com/blog/flutter-and-ubuntu-so-far">Flutter/Dart</a> on top of the GTK4.</p></li>
-</ul>
-
-<h3>Go</h3>
-
-<ul>
-<li><p>Stuff built with it: <a href="https://pocketbase.io/">PocketBase</a>, Caddy, Docker, go-libp2p, Syncthing, <a href="https://github.com/berty/berty">Berty</a>, <a href="https://github.com/anywherelan/awl">awl</a>&hellip;</p></li>
-
-<li><p>Older engineers also use it for the SSR (MPA) with templating, ORM or raw SQL, and Docker VPS single binary deployments. YAGNI, KISS, DIY, but no standard pipeline and templating with htmx is not Go.</p></li>
-
-<li><p>Go as a language <a href="https://www.reddit.com/r/typescript/comments/15y9tbm/anyone_who_tried_to_like_golang_and_tried_it_many/">is not perfect</a>. Sadly, the perfect ones are either dynamic (Python, Elixir), too academic (Elm, ReasonML, PureScript, Gleam, Scala), not Linux-centric (F#, Scala), too low level (Zig), still lacking quality sum types and focus (Nim), or too overengineered (D, Rust, Scala&hellip; be my guest finding a language designer who is not into compile time gymnastics).</p></li>
-
-<li><p>Older, but also quite vocal community: <a href="https://eli.thegreenplace.net/">Eli Bendersky</a>, <a href="https://www.youtube.com/@ThePrimeagen/videos">@ThePrimeagen</a>, <a href="https://www.youtube.com/@anthonygg_">@anthonygg_</a>, <a href="https://youtu.be/pArsmWLvZsA?t=1853">Adrian Hesketh</a>, <a href="https://www.youtube.com/@WebDevCody">@WebDevCody</a>&hellip;</p></li>
-
-<li><p>Bottom line: Go is probably the only practical language that does not induce a language fatigue. However, I doubt that using SSR with Go, Templ, and htmx is the best way to build web apps. We now end up with one or two obscure extra languages with no convergence around the ORM (or no ORM), unlike, say, in the case of Drizzle in TypeScript. A basic frontend with React (mostly JSX with useState and useEffect, and React Router) is a better technology than vanilla JavaScript and templates, is it not?</p></li>
-</ul>
-</div>
-    <span class="read-more">Read more</span>
-</div>
         <footer class="footer">
             <a href="https://aabbtree77.github.io/" target="_blank">The Old Blog</a>
         </footer>
