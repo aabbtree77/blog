@@ -1,6 +1,6 @@
 # Classical Light
 
-Physics is beautiful, but it gets [really tiresome](https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus) with QM and QFT. Mathematics does a bad job compressing it. However, we have very few key experiments. This is the way to grasp it all. Science &#8801; attention to detail. Classical light &#8801; classical electromagnetism.
+Physics is beautiful, but it gets [really tiresome](https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus) with QM and QFT. Mathematics does a bad job compressing it. However, we have very few key experiments. This is the way. Science &#8801; attention to detail. Classical light &#8801; classical electromagnetism.
 
 [Eratosthenes (240 BC).](https://physicsteacher.blog/category/eratosthenes-size-of-the-earth-radius-of-the-earth-first-measurement/) Measuring the radius of Earth. "You know," said the visitor, "at noon on this day, in my home town there are no shadows."
 
