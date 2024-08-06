@@ -1,8 +1,6 @@
-# A Sample of Lithuania (and a bit of Latvia)
+# Lithuania (and a bit of Latvia)
 
-I will collect here a few of my favorite links related to our culture. One can always dig for something deep, but my top 3 most liked things about Lithuania would be: (1) Our seashore (Palanga... sadly I am no writer to explain it), (2) schools provide free well-lit modern courts to practice sports and meet new people (unlike in the US or France, by the way), and (3) obscure old book exchange hubs where it is sometimes possible to meet a different kind of people.
-
-Anyway, IT and software seems to be thriving, as everywhere. Native companies include: Vinted, Hostinger, Kilo.Health, Teltonika, NordVPN, Nordcurrent Group, TutoToons, No Brakes Games... Foreign branches: Dassault Systèmes, IBM, Canonical, Unity, Wix, Nasdaq, Kayak, Wargaming... I probably miss a lot of names here, see [@PROTOINDUSTRIJA](https://www.youtube.com/@PROTOINDUSTRIJA/videos) about some work life here.
+A sample of Lithuanian painters, cinema, books, music. In addition, a few outstanding Latvian projects.
 
 Painters: [Mikalojus Konstantinas Čiurlionis](https://www.youtube.com/watch?v=CNcCcQ38Sk4), [Arūnas Žilys](https://www.pinterest.com/pin/225461525066402919/), [Никас Сафронов](https://youtu.be/amZBAYsepjY?t=1763). 
 
