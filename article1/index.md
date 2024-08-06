@@ -1,6 +1,6 @@
-# My Awesome List
+# Programming Links
 
-A few inspiring resources related to programming.
+A few links related to programming philosophy, compilers, distributed systems, design.
 
 ### Philosophy
 
@@ -10,22 +10,30 @@ A few inspiring resources related to programming.
 
 ### Compilers
 
-- [Ark (2015):](https://github.com/ark-lang/ark) A static non-GC language written in Go and LLVM: FFI to C, OpenGL demo.
+- [Ark](https://github.com/ark-lang/ark): A static non-GC language written in Go and LLVM: FFI to C, OpenGL demo.
 
-- [mini-js (2017):](https://github.com/maierfelix/mini-js/tree/master) "Minimal self-hosted JavaScript compiler in 1k lines of code."
+- [mini-js](https://github.com/maierfelix/mini-js/tree/master): "Minimal self-hosted JavaScript compiler in 1k lines of code."
 
-- [Monkey (2018):](https://github.com/search?q=monkey+interpreter) A minimal Js-like language implemented with a recursive descent parser, in Go. Lots of following!
+- [Monkey](https://github.com/search?q=monkey+interpreter): A minimal Js-like language implemented with a recursive descent parser, in Go. Lots of following!
 
-- [Mugo (2021):](https://benhoyt.com/writings/mugo/) A subset of Go compiled to the x86-64 assembly, in Go.
+- [Mugo](https://benhoyt.com/writings/mugo/): A subset of Go compiled to the x86-64 assembly, in Go.
+
+- [M/o/Vfuscator](https://www.youtube.com/watch?v=R7EEoWg6Ekk): The single instruction C compiler.
+
+### Distributed Systems
+
+- [Martin Fowler](https://martinfowler.com/bliki/FirstLaw.html): "My First Law of Distributed Object Design: Don't distribute your objects."
+
+- [Sameer Ajmani](https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go): Simulating a Real-World System in Go.
+
+- [Web Dev Cody](https://www.youtube.com/watch?v=SJaEbmeAI0o): Why understanding concurrency in Go is so important. Initially called "This is the biggest Go lang footgun."
 
 ### Design
 
-- Simulating a Real-World System in Go [(2017)](https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go).
+- [Cliff Brake](https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488): How to create a presentation in draw.io.
 
-- How to create a presentation in draw.io [(2022)](https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488).
+- [Dynomight](https://dynomight.net/lists/): How I learned to stop worrying and structure all writing as a list.
 
-- How I learned to stop worrying and structure all writing as a list [(2023)](https://dynomight.net/lists/).
-
-- The Easy Way to Design Top Tier Websites [(2024)](https://www.youtube.com/watch?v=qyomWr_C_jA).
+- [Sajid](https://www.youtube.com/watch?v=qyomWr_C_jA): The Easy Way to Design Top Tier Websites.
 
 

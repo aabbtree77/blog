@@ -51,8 +51,9 @@ func main() {
     <h2>%s</h2>
     <div class="summary">%s</div>
     <div class="content">%s</div>
-    <span class="read-more">Read more</span>
-</div>`, title, summary, content)
+    <br>
+    <span class="separator">More</span>
+</div> <br>`, title, summary, content)
 
         // Append the article HTML section to the slice
         articleHTMLSections = append(articleHTMLSections, articleHTML)

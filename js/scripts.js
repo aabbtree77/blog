@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".read-more").forEach((button) => {
+  document.querySelectorAll(".separator").forEach((button) => {
     button.addEventListener("click", () => {
       const article = button.closest(".article");
       const summary = article.querySelector(".summary");
@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
         summary.style.display = "none";
-        button.textContent = "Read less";
+        button.textContent = "Less";
       } else {
         content.style.display = "none";
         summary.style.display = "block";
-        button.textContent = "Read more";
+        button.textContent = "More";
       }
     });
   });

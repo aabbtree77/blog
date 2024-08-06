@@ -32,10 +32,10 @@
         <h1 class="title">Blog</h1>
         
 <div class="article">
-    <h2>My Awesome List</h2>
-    <div class="summary"><p>A few inspiring resources related to programming.</p>
+    <h2>Programming Links</h2>
+    <div class="summary"><p>A few links related to programming philosophy, compilers, distributed systems, design.</p>
 </div>
-    <div class="content"><p>A few inspiring resources related to programming.</p>
+    <div class="content"><p>A few links related to programming philosophy, compilers, distributed systems, design.</p>
 
 <h3>Philosophy</h3>
 
@@ -48,31 +48,459 @@
 <h3>Compilers</h3>
 
 <ul>
-<li><p><a href="https://github.com/ark-lang/ark">Ark (2015):</a> A static non-GC language written in Go and LLVM: FFI to C, OpenGL demo.</p></li>
+<li><p><a href="https://github.com/ark-lang/ark">Ark</a>: A static non-GC language written in Go and LLVM: FFI to C, OpenGL demo.</p></li>
 
-<li><p><a href="https://github.com/maierfelix/mini-js/tree/master">mini-js (2017):</a> &ldquo;Minimal self-hosted JavaScript compiler in 1k lines of code.&rdquo;</p></li>
+<li><p><a href="https://github.com/maierfelix/mini-js/tree/master">mini-js</a>: &ldquo;Minimal self-hosted JavaScript compiler in 1k lines of code.&rdquo;</p></li>
 
-<li><p><a href="https://github.com/search?q=monkey+interpreter">Monkey (2018):</a> A minimal Js-like language implemented with a recursive descent parser, in Go. Lots of following!</p></li>
+<li><p><a href="https://github.com/search?q=monkey+interpreter">Monkey</a>: A minimal Js-like language implemented with a recursive descent parser, in Go. Lots of following!</p></li>
 
-<li><p><a href="https://benhoyt.com/writings/mugo/">Mugo (2021):</a> A subset of Go compiled to the x86-64 assembly, in Go.</p></li>
+<li><p><a href="https://benhoyt.com/writings/mugo/">Mugo</a>: A subset of Go compiled to the x86-64 assembly, in Go.</p></li>
+
+<li><p><a href="https://www.youtube.com/watch?v=R7EEoWg6Ekk">M/o/Vfuscator</a>: The single instruction C compiler.</p></li>
+</ul>
+
+<h3>Distributed Systems</h3>
+
+<ul>
+<li><p><a href="https://martinfowler.com/bliki/FirstLaw.html">Martin Fowler</a>: &ldquo;My First Law of Distributed Object Design: Don&rsquo;t distribute your objects.&rdquo;</p></li>
+
+<li><p><a href="https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go">Sameer Ajmani</a>: Simulating a Real-World System in Go.</p></li>
+
+<li><p><a href="https://www.youtube.com/watch?v=SJaEbmeAI0o">Web Dev Cody</a>: Why understanding concurrency in Go is so important. Initially called &ldquo;This is the biggest Go lang footgun.&rdquo;</p></li>
 </ul>
 
 <h3>Design</h3>
 
 <ul>
-<li><p>Simulating a Real-World System in Go <a href="https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go">(2017)</a>.</p></li>
+<li><p><a href="https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488">Cliff Brake</a>: How to create a presentation in draw.io.</p></li>
 
-<li><p>How to create a presentation in draw.io <a href="https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488">(2022)</a>.</p></li>
+<li><p><a href="https://dynomight.net/lists/">Dynomight</a>: How I learned to stop worrying and structure all writing as a list.</p></li>
 
-<li><p>How I learned to stop worrying and structure all writing as a list <a href="https://dynomight.net/lists/">(2023)</a>.</p></li>
-
-<li><p>The Easy Way to Design Top Tier Websites <a href="https://www.youtube.com/watch?v=qyomWr_C_jA">(2024)</a>.</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=qyomWr_C_jA">Sajid</a>: The Easy Way to Design Top Tier Websites.</p></li>
 </ul>
 </div>
-    <span class="read-more">Read more</span>
+    <br>
+    <span class="separator">More</span>
+</div> <br>
+
+<div class="article">
+    <h2>Tensor Algebra</h2>
+    <div class="summary"><p><a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Donn G. Shankland (1970)</a> reveals how to parse mysterious phrases such as (i) &ldquo;tensor fields contain irreducible representations of the Lorentz group&rdquo;, (ii) &ldquo;antisymmetric two-tensor field can carry two particle triplets&rdquo;, and (iii) &ldquo;a free-field equation is nothing but an invariant record of which components are superfluous&rdquo;. I will add here a few notes that might help one to decipher his paper.</p>
 </div>
+    <div class="content"><p><a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Donn G. Shankland (1970)</a> reveals how to parse mysterious phrases such as (i) &ldquo;tensor fields contain irreducible representations of the Lorentz group&rdquo;, (ii) &ldquo;antisymmetric two-tensor field can carry two particle triplets&rdquo;, and (iii) &ldquo;a free-field equation is nothing but an invariant record of which components are superfluous&rdquo;. I will add here a few notes that might help one to decipher his paper.</p>
+
+<p>An archetypical problem that ChatGPT cannot solve: Given the <a href="https://en.wikipedia.org/wiki/Four-vector">four-vector</a> <span class="math inline">\(k_{\mu}\)</span> and <a href="https://en.wikipedia.org/wiki/Metric_tensor">the metric tensor</a> <span class="math inline">\(g_{\mu\nu}\)</span>, write down the most general dimensionless tensor <span class="math inline">\({T_{\mu\nu}}^{\rho \sigma}\)</span> symmetric under the permutations of the covariant indices <span class="math inline">\((\mu, \nu)\)</span>, and also symmetric w.r.t. the permutations of contravariant indices <span class="math inline">\((\rho, \sigma)\)</span>. It should be a sum of linearly independent terms, each with a manifest symmetry, and at most fourth order in <span class="math inline">\(k_{\mu}\)</span>.</p>
+
+<p><a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> jumps into the answer, which is a linear combination of</p>
+<p><span class="math display">\[
+\begin{align}
+X_{1} &amp; = \frac{1}{4} {g_{(\mu}}^{(\rho} {g_{\nu)}}^{\sigma)}\,,\\
+X_{2} &amp; = g_{\mu \nu} g^{\rho \sigma}\,, \\
+X_{3} &amp; = \frac{1}{k^2} g_{\mu \nu} k^{\rho} k^{\sigma}\,, \\
+X_{4} &amp; = \frac{1}{k^2} k_{\mu} k_{\nu} g^{\rho \sigma}\,, \\
+X_{5} &amp; = \frac{1}{k^4} k_{\mu} k_{\nu} k^{\rho} k^{\sigma}\,, \\
+X_{6} &amp; = \frac{1}{k^2} k_{(\mu} {g_{\nu)}}^{(\rho} k^{\sigma)}\,.
+\end{align}
+\]</span></p><p>Here the division by 4 of the first basis element is not important, but it would turn <span class="math inline">\(X_{1}\)</span> into an index symmetrization operator if one acted with it on any two-index tensor.</p>
+
+<p>The logic is clear. One groups the combinations of primitives according to their distinct combinatorial types. Linear independence is verified by choosing a few random non-zero elements of a tensor.</p>
+
+<p>One can view tensors as matrices by appending each element with an indicator basis:</p>
+<p><span class="math display">\[
+\begin{align}
+e^{\mu}\otimes e^{\nu}\otimes e_{\rho}\otimes e_{\sigma}\,,
+\end{align}
+\]</span></p><p>with the implied summation over repeated indices. Thus, each <span class="math inline">\(X_{i}\)</span> can be seen as the sum of 256 matrices of size 16x16. Here one can assume that the upper/lower index corresponds to the row/column vector, resp.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Kronecker_product">The Kronecker product</a> has an interesting property:</p>
+<p><span class="math display">\[
+\begin{align}
+a^{i}\otimes b^{j} &amp;\neq b^{j}\otimes a^{i}\,,\\
+a^{i}\otimes b_{j} &amp;= b_{j}\otimes a^{i}\,.
+\end{align}
+\]</span></p><p>Along with the associativity, this reveals the tensor index positioning ambiguity:</p>
+<p><span class="math display">\[
+X{^i}{^j}{_k} = X{^i}{_k}{^j} = X{_k}{^i}{^j}.
+\]</span></p><p>It is tempting to write <span class="math inline">\(X^{ij}_{k}\)</span>, but then one cannot always raise or lower an index uniquely.</p>
+
+<p>A tensor product is defined with the implied summation over repeated indices:</p>
+<p><span class="math display">\[
+A\, B \equiv {A_{\mu \nu}}^{\alpha \beta} {B_{\alpha \beta}}^{\rho \sigma}\,.
+\]</span></p><p><strong>Magically, these tensor basis expressions form an algebra under this product, but I do not understand why. I can only verify that this fact indeed takes place.</strong></p>
+
+<p>Let us correct one symmetric tensor product:</p>
+<p><span class="math display">\[
+X_{6} X_{6} = 8 X_{5} + 2 X_{6}.
+\]</span></p><p>The definitions of the product and index symmetrization <span class="math inline">\((\cdot, \cdot)\)</span> lead to <span class="math inline">\(X_{6} X_{6}\)</span> expressed as</p>
+<p><span class="math display">\[
+\begin{align}
+&amp; \equiv \frac{1}{k^2} k_{(\mu} {g_{\nu)}}^{(\alpha} k^{\beta)} \frac{1}{k^2} k_{(\alpha} {g_{\beta)}}^{(\rho} k^{\sigma)}\\
+ &amp;= \frac{1}{k^4} \Big( k_{\mu} {g_{\nu}}^{\alpha} k^{\beta} + k_{\mu} {g_{\nu}}^{\beta} k^{\alpha} \\
+            &amp; \;\;\;\;+ k_{\nu} {g_{\mu}}^{\alpha} k^{\beta} + k_{\nu} {g_{\mu}}^{\beta} k^{\alpha} \Big)\\
+            &amp; \;\;\;\;\cdot \Big( k_{\alpha} {g_{\beta}}^{\rho} k^{\sigma} + k_{\alpha} {g_{\beta}}^{\sigma} k^{\rho} \\
+            &amp; \;\;\;\;+ k_{\beta} {g_{\alpha}}^{\rho} k^{\sigma} + k_{\beta} {g_{\alpha}}^{\sigma} k^{\rho} \Big).
+\end{align}
+\]</span></p><p>This will produce 16 terms, but they will further simplify with the use of</p>
+<p><span class="math display">\[
+\begin{align}
+k_{\alpha} k^{\alpha} &amp; = k^2 \\
+{g_{\nu}}^{\alpha}k_{\alpha} &amp;= k_{\nu} \\
+{g_{\nu}}^{\beta} {g_{\beta}}^{\sigma} &amp;= {g_{\nu}}^{\sigma}\;.
+\end{align}
+\]</span></p><p>I will not write the whole process, but let us multiply the first terms in the parentheses, just to give one an idea:</p>
+<p><span class="math display">\[
+\begin{align}
+t_{1} &amp; = k_{\mu} {g_{\nu}}^{\alpha} k^{\beta} \cdot k_{\alpha} {g_{\beta}}^{\rho} k^{\sigma} \\
+&amp; = k_{\mu} \big({g_{\nu}}^{\alpha} k_{\alpha}\big) \big({g_{\beta}}^{\rho} k^{\beta}\big) k^{\sigma} \\
+&amp;= k_{\mu} k_{\nu} k^{\rho} k^{\sigma}.
+\end{align}
+\]</span></p><p>A page later ;) there will be 8 such terms and a doubled <span class="math inline">\(X_{6}\)</span> left. It is <span class="math inline">\(8 X_{5} + 2 X_{6}\)</span>, not <span class="math inline">\(8 X_{4} + 2 X_{6}\)</span> in <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a>.</p>
+
+<p>All the computed traces of the algebra of the symmetric two-tensor field are correct. I will only note here the definition of a trace:</p>
+<p><span class="math display">\[
+\begin{align}
+\textit{tr}\,{X_{\mu \nu}}^{\rho \sigma}  \equiv {X_{\mu \nu}}^{\mu \nu}.
+\end{align}
+\]</span></p><p>In order to calculate these tensorial traces one has to know the values of <span class="math inline">\(g_{ij}\)</span> and the mixed tensor</p>
+<p><span class="math display">\[
+\begin{align}
+{g_{i}}^{j}={\delta_{i}}^{j}=\begin{cases}
+0 &amp; i \ne j \\
+1 &amp; i = j
+\end{cases}\;\;.
+\end{align}
+\]</span></p><p>There is no need to know these values when getting the product tables.</p>
+
+<p>The products and traces determine the spectrum. <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> applies <a href="https://en.wikipedia.org/wiki/Faddeev%E2%80%93LeVerrier_algorithm">the Faddeev - LeVerrier algorithm</a>, while <a href="https://spiral.imperial.ac.uk/bitstream/10044/1/13413/2/Barnes-KJ-1963-PhD-Thesis.pdf">K.J. Barnes (1963)</a> goes for the matrix projection operators. Mysteriously, the eigenvalues will have multiplicities which can be derived independently from the tensor product of two <span class="math inline">\(sl(2, \mathbb{C})\)</span> algebras in the theory of the Lorentz group (Lorentz with &ldquo;t&rdquo;). The eigenvector equations lead to the Lorenz gauge condition (Lorenz without &ldquo;t&rdquo;).</p>
+
+<p><a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> shows how one can get even eigenvalue multiplicities (&ldquo;half integer spins&rdquo;) with <a href="https://en.wikipedia.org/wiki/Gamma_matrices">the gamma matrices</a>. The case with a vector and a spinor index leads to the rapid growth of complexity.</p>
+
+<p>The algebra is constructed from <span class="math inline">\(g \equiv \eta\)</span>, a four-vector <span class="math inline">\(p_{\mu}\)</span>, and a four-vector-like <span class="math inline">\(\gamma_{\mu}\)</span> which also carries suppressed spinor indices. One arranges all the distinct products, et voilà. What is not trivial is that one needs to treat the matrix <span class="math inline">\(\boldsymbol{p} \equiv p\llap{\unicode{x2215}}\)</span> as an independent primitive which effectively doubles the number of basis elements from five to ten. <span class="math inline">\(\boldsymbol{p}\)</span> has no vector indices and hides spinorial indices implicitly.</p>
+
+<p>How does one parse expressions such as <span class="math inline">\(\gamma_{\mu}\gamma^{\nu} \boldsymbol{p}\)</span>? Given <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\nu\)</span>, it is a product of three 4x4 matrices. The matrix product is implicit.</p>
+
+<p>The resulting phrase is likely erroneous: &ldquo;&hellip; we find, together with their antiparticles, the following groups of particles: a quadruplet, and two doublets.&rdquo;</p>
+
+<p>Weinberg&rsquo;s QFT, Vol. 1, pages 229-233, would indicate that <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> must have missed a triplet and its anti-triplet, but the arguments rely on group theory which is an <a href="https://physics.stackexchange.com/questions/269234/1-2-0-representation-of-the-lorentz-group-so1-3">overwhelming detour</a>.</p>
+
+<p>The main strength of this work is that it provides an original way to treat irreducibility without group theory. A lot can also be automated. <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> uses advanced Faddeev-LeVerrier algorithm which allows to compute eigenvectors. It works even in the presence of multiple eigenvalues, see e.g. <a href="https://core.ac.uk/download/pdf/81192811.pdf">Helmberg and Wagner (1993).</a></p>
+
+<p>The eigenvectors are linear combinations of the basis elements of the algebra that depend on the eigenvalue <span class="math inline">\(\lambda\)</span>. By zeroing out the eigenvalues of the particles we want to remove from a field, we obtain operators which act on tensor fields as auxiliary conditions. They become PDEs with <span class="math inline">\(k_{\mu} \rightarrow \partial_{\mu}\)</span>. What do we get with the eigenvectors of nonzero eigenvalues?</p>
+
+<p>The latter should lead to free field (wave) equations, which is visible in the alternative formalism of <a href="https://en.wikipedia.org/wiki/Joos%E2%80%93Weinberg_equation">Joos-Weinberg</a> clarified a lot by <a href="https://arxiv.org/abs/nucl-th/9704066">Ahluwalia (1991)</a>. Adjusted free-space Green functions of these wave PDEs serve as propagators in <a href="https://cerncourier.com/a/quantum-electrodynamics/">Feynman diagram-based calculations</a>. The EM interactions are often added via <a href="https://en.wikipedia.org/wiki/Rarita%E2%80%93Schwinger_equation"><span class="math inline">\(\partial_{\mu}\rightarrow \partial_{\mu}-ieA_{\mu}\)</span></a>, but this mechanism does not always work.</p>
+
+<p>Steven Weinberg did not spend much time on consistent wave equations, but rather on consistent S-matrices, which is closer to nuclear reactions and scattering experiments. <a href="https://arxiv.org/a/ahluwalia_d_1.html">Dharam Vir Ahluwalia</a>, <a href="https://ir.canterbury.ac.nz/items/81a8dc3d-d6f4-446a-8392-0c2f4f69f033">Adam Gillard</a>, and others probe the Joos-Weinberg formalism in modern domains such as neutrinos and dark matter.</p>
+
+<p>Ultimately, <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> provides only a &ldquo;combine-split&rdquo; mathematical puzzle game. As an input, we specify the number of spinorial and tensorial indices, and the tensorial symmetry or antisymmetry. In the output, we receive the list of &ldquo;particle types&rdquo; and the list of PDEs to remove each type. We control PCT and the number of field components by choosing &ldquo;gamma-like&rdquo; primitives involving Pauli matrices.</p>
+
+<p>According to group theory, combining indices means taking &ldquo;tensor products <span class="math inline">\((m,n)\otimes (k,l)\)</span> of Lorentz irreps&rdquo;, clf. Weinberg&rsquo;s QFT, Vol. 1, pages 229-233:</p>
+
+<p><span class="math inline">\((0,0)\)</span>: A scalar.</p>
+
+<p><span class="math inline">\((\frac{1}{2},\frac{1}{2})\)</span>: A single four-vector index.</p>
+
+<p><span class="math inline">\((\frac{1}{2},0)\oplus (0,\frac{1}{2})\)</span>: A full single spinor index.</p>
+
+<p><span class="math inline">\((1,1)\)</span>: Two symmetric tensor indices.</p>
+
+<p><span class="math inline">\((1,0)\oplus (0,1)\)</span>: Two asymmetric tensor indices.</p>
+
+<p>Scalars are not used by <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a>, but they appear in the spectrum as singlets. In a symmetric two-index tensor case, to remove a singlet also means to make the tensor traceless.</p>
+
+<p>Combining a vector and a spinor index implies taking the product <span class="math inline">\((\frac{1}{2},\frac{1}{2}) \otimes (\frac{1}{2},0)\oplus (0,\frac{1}{2})\)</span>
+which splits into a vector and an irreducible component <span class="math inline">\((1,\frac{1}{2}) \oplus (\frac{1}{2},1)\)</span>, clf. Weinberg&rsquo;s QFT, Vol. 1, page 232. We can call the latter a &ldquo;spin <sup>3</sup>&frasl;<sub>2</sub>&rdquo; field. In the Joos-Weinberg formalism, this is a different irreducible component <span class="math inline">\((\frac{3}{2},0) \oplus (0,\frac{3}{2})\)</span>. It could still be produced in Shankland&rsquo;s algebra, but not with one vector and one spinor index.</p>
+
+<p>Why a single &ldquo;spin&rdquo; parameter? <span class="math inline">\((m,n)\)</span> is not the Kronecker product <span class="math inline">\(m\otimes n\)</span> of &ldquo;rotations&rdquo;, but Shankland&rsquo;s eigenvalue multiplicities follow this pattern, and the scalar value <span class="math inline">\(m+m\)</span> also describes the maximal &ldquo;degrees of freedom of a particle&rdquo;. The Kronecker product splits into &ldquo;spin multiplicities&rdquo; <span class="math inline">\(s=|m-n|,\ldots, m+n\)</span>, e.g.</p>
+<p><span class="math display">\[
+\begin{align}
+(1,\frac{1}{2}) = \frac{1}{2}\oplus 1 \oplus \frac{3}{2}\,.
+\end{align}
+\]</span></p><p>The eigenvalue multiplicities will have <span class="math inline">\(2s+1\)</span> values. In Shankland&rsquo;s terminology, we obtain a doublet, a triplet, and a quadruplet from the equation above. However, this collection does not constitute three particles. It is one half of the irreducible &ldquo;spin <sup>3</sup>&frasl;<sub>2</sub>&rdquo; particle <span class="math inline">\((1,\frac{1}{2}) \oplus (\frac{1}{2},1)\)</span>.</p>
+
+<p>I am very vague here, being oblivious to complex vs real, Cartesian vs direct vs Kronecker products, groups vs algebras&hellip; The point here is only to show that group theory: (i) allows to verify Shankland&rsquo;s eigenvalue multiplicities, and (ii) indicates that not every multiple eigenvalue is a &ldquo;separate particle&rdquo;. The whole group theory/QFT thing is beyond cumbersome. It is hilarious to find out that even Weinberg (!) uses the word <strong>complicated</strong> several times in his QFT Vol 3.</p>
+
+<p>Although not of direct relevance, a human-readable group theory-free way to build invariant cost functions can be found in the works of P.A. Zhilin: <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_rus.pdf">1</a>, <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_eng.pdf">2</a>. It leads to a different kind of irreducibility and &ldquo;particles&rdquo;.</p>
+
+<p>One can find some mildly successful uses/hints of tensor algebras in <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.106.1345">Phys. Rev. 106, 1345 (1957)</a>; <a href="https://link.springer.com/article/10.1007/BF02752873">Nuovo Cimento, 43, 475 (1966)</a>; <a href="https://link.springer.com/article/10.1007/BF02818340">Nuovo Cimento 47, 145 (1967)</a>; <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.153.1652">Phys. Rev. 153, 1652 (1967)</a>; <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.161.1631">Phys. Rev. 161, 1631 (1967)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.8.2650">Phys. Rev. D 8, 2650 (1973)</a>; <a href="https://inspirehep.net/literature/98459">Nuovo Cimento 28, 409 (1975)</a>; <a href="https://arxiv.org/abs/hep-th/9212008">Phys. Lett. B 301 4 339 (1993)</a>; <a href="https://arxiv.org/abs/hep-ph/0103172">Phys. Rev. C 64, 015203 (2001)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.64.125013">Phys. Rev. D 64, 125013 (2001)</a>; <a href="https://www.imath.kiev.ua/~nikitin/PAPER26.pdf">Hadronic J. 26, 351 (2003)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.67.085021">Phys. Rev. D 67, 085021 (2003)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.67.125011">Phys. Rev. D 67, 125011 (2003)</a>; <a href="https://arxiv.org/abs/hep-th/0505255">Nucl. Phys. B724, 453 (2005)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.74.084036">Phys. Rev. D 74, 084036 (2006)</a>; <a href="https://birdtracks.eu/">P. Cvitanović (2008)</a>; <a href="https://royalsocietypublishing.org/doi/10.1098/rspa.2010.0149">V. Monchiet and G. Bonnet (2010)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.115043">Phys. Rev. D 97, 115043 (2018)</a>; <a href="https://news.stonybrook.edu/facultystaff/qa-with-breakthrough-prize-winner-peter-van-nieuwenhuizen/">SUGRA and CDC</a>&hellip;</p>
+
+<p>Who wants to clean the mess?</p>
+
+<div style="text-align:center">
+<a style="font-size: 1rem;" href="https://youtu.be/Y183gJQ9yCY?t=20">Sign the contract big boy...</a>
+<a href="https://voi.id/en/memori/185165">
+<img src="article2/IronMike-min-rs.png" style="display: block; margin: auto;" title="Iron Mike" width="50%">
+</a>
+</div>
+</div>
+    <br>
+    <span class="separator">More</span>
+</div> <br>
+
+<div class="article">
+    <h2>Lie Theory, Finally</h2>
+    <div class="summary"><p>There is a theorem in Lie theory which states: An invariant multivariate function <span class="math inline">\(f\)</span> satisfies the necessary and sufficient condition <span class="math inline">\(Gf=0\)</span>, where <span class="math inline">\(G\)</span> is the Lie group generator, see e.g. § 68, page 82 in <a href="https://archive.org/details/introductorytrea00campuoft">J. E. Campbell (1903)</a>. Abraham Cohen (1911) and Leonard Eugene Dickson (1924) are also readable (Bourbaki-free). <a href="https://ru.wikipedia.org/wiki/%D0%96%D0%B8%D0%BB%D0%B8%D0%BD,_%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_(%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA)">Pavel Zhilin (2003)</a>  extends the theorem to the functions of multiple transforming objects of different types (vectors and matrices): <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_rus.pdf">(2003 Ru)</a>, <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_eng.pdf">(2005 Eng)</a>.</p>
+</div>
+    <div class="content"><p>There is a theorem in Lie theory which states: An invariant multivariate function <span class="math inline">\(f\)</span> satisfies the necessary and sufficient condition <span class="math inline">\(Gf=0\)</span>, where <span class="math inline">\(G\)</span> is the Lie group generator, see e.g. § 68, page 82 in <a href="https://archive.org/details/introductorytrea00campuoft">J. E. Campbell (1903)</a>. Abraham Cohen (1911) and Leonard Eugene Dickson (1924) are also readable (Bourbaki-free). <a href="https://ru.wikipedia.org/wiki/%D0%96%D0%B8%D0%BB%D0%B8%D0%BD,_%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_(%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA)">Pavel Zhilin (2003)</a>  extends the theorem to the functions of multiple transforming objects of different types (vectors and matrices): <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_rus.pdf">(2003 Ru)</a>, <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_eng.pdf">(2005 Eng)</a>.</p>
+
+<p>The invariance requirement is posed as a functional equation. It is solved with a trick which gives a single weight to all the group parameters (I would have differentiated w.r.t. all the parameters independently, only to become lost).</p>
+
+<p>Paradoxically, theoretical mechanics is the only domain where I have found a method to construct invariant functions. A brilliant work which distills Lie theory into a coherent solution chain.</p>
+</div>
+    <br>
+    <span class="separator">More</span>
+</div> <br>
+
+<div class="article">
+    <h2>Spintires</h2>
+    <div class="summary"><p><a href="https://en.wikipedia.org/wiki/Spintires">Spintires: The Original Game (2014-2020)</a> is an outstanding game about off-road cargo delivery missions with hypnotizing realism of mud and vehicle physics.</p>
+</div>
+    <div class="content"><p><a href="https://en.wikipedia.org/wiki/Spintires">Spintires: The Original Game (2014-2020)</a> is an outstanding game about off-road cargo delivery missions with hypnotizing realism of mud and vehicle physics.</p>
+
+<p><a href="https://www.ign.com/articles/stuck-in-the-mud-how-a-tiny-beloved-driving-game-sparked-a-bizarre-decade-long-feud">A mess with unbalanced rewards between Pavel Zagrebelnyy, Saber, and Oovee</a> has led them to three separate games which are missing the main question to answer: Will a given vehicle (with cargo) pass the swamp or not, what does work, what does not?</p>
+
+<p>There should be at least several types of mud: (i) the denser swamps which are better handled with tracked vehicles, and (ii) those which can be conquered only by the vehicles with very large diameter (&gt;1600mm), low pressure tires. DT-30, Trom-8, and Trom-20, with a proper Sherp/Bigbo machines which can get through mild forests and serious swamps. Siberia with Putorana Plateau, Kamchatka, the Arctic. Not 30 maps with 1000 missions of bs to choose from.</p>
+
+<p>Imagine the best of Spintires and <a href="https://en.wikipedia.org/wiki/BeamNG.drive">BeamNg.drive</a> united into a single game.</p>
+
+<p>More physics, geometry, details. A deeper forest. We do not know how deep a forest can be.</p>
+
+<h3>References</h3>
+
+<p>Impulse-based reaction model: <a href="https://en.wikipedia.org/wiki/Collision_response">0</a>, <a href="https://www.amazon.com/Game-Physics-David-H-Eberly/dp/0123749034">1</a>, <a href="https://github.com/RandyGaul/qu3e">2</a>.</p>
+
+<p><a href="https://youtu.be/KAeGBYC2ikY?t=2409">Gangrena.</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=K32NTMG84jo">Kraz 255.</a></p>
+
+<p>Sherp: <a href="https://www.youtube.com/watch?v=hoxGce9LDVQ&amp;list=PL9UZ_h6ShM5dVCKrNzDnAsz0eknPRNi6G&amp;t=1192s">Design</a>, <a href="https://youtu.be/8IF5N4H7elw?t=828">Kanin Nos</a>&hellip; Problems: <a href="https://youtu.be/S37aN1gaabQ?t=2315">0</a>, <a href="https://youtu.be/e-xtksKQo64?t=882">1</a>, <a href="https://youtu.be/0-q9k7oy3QA?t=1007">2</a>, <a href="https://youtu.be/0-q9k7oy3QA?t=343">3</a>, <a href="https://youtu.be/zq6XnDe_ATo">4</a>, <a href="https://youtu.be/fqjXPQXjRqM?t=976">5</a>.</p>
+
+<p>Bigbo: <a href="https://www.youtube.com/watch?v=w0yJkJ5K__Y&amp;list=PLD5JHy8TEu9SDxSSybruTJqr8hgCQnPHM&amp;index=6">Samotlor</a>, <a href="https://www.youtube.com/watch?v=KJN5_TWnsnI">Poksha</a>, <a href="https://www.youtube.com/watch?v=ZyFh5cNKCkA">Volga</a>.</p>
+
+<p>Trom-8: <a href="https://www.youtube.com/watch?v=yDb3nC5YBv4">0</a>, <a href="https://youtu.be/U7GRv93y7pg?list=PLxE_9KIBdgJSMtKAdgxdrMRXnzp-lbt4V&amp;t=34">1</a>, <a href="https://youtu.be/omoPuuvd_yg?t=412">Trom-17 vs Gidrotrak</a>, <a href="https://youtu.be/qblfZ63LBrI?t=430">Berkut-8</a>, <a href="https://www.youtube.com/watch?v=JetpPhwi0ns">Strannik</a>.</p>
+
+<p><a href="https://youtu.be/GqUkmErQBX8?t=635">Zis-5.</a></p>
+
+<p>Hitachi ZX200: <a href="https://youtu.be/6p9LF0rTlkc?t=1019">Zil-157</a>, <a href="https://www.youtube.com/watch?v=SDhtv-yBvks">Zil-131</a>.</p>
+</div>
+    <br>
+    <span class="separator">More</span>
+</div> <br>
+
+<div class="article">
+    <h2>My Favorite French Films</h2>
+    <div class="summary"><p>My favorite French films grouped by decades.</p>
+</div>
+    <div class="content"><p>My favorite French films grouped by decades.</p>
+
+<h3>FR-1960</h3>
+
+<p><a href="https://www.imdb.com/title/tt0053666/">Les bonnes femmes (1960)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0143088/">Adieu Philippine (1962)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0058450/">Les parapluies de Cherbourg (1964)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0060675/">Masculin féminin (1966)</a></p>
+
+<h3>FR-1970</h3>
+
+<p><a href="https://www.imdb.com/title/tt0224857/">La dame de Monsoreau (1971)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0070007/">Du côté d&rsquo;Orouët (1971)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0067901/">Un peu de soleil dans l&rsquo;eau froide (1971)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0070359/">La maman et la putain (1973)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0072353/">Les valseuses (1974)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0073198/">Jeanne Dielman&hellip; (1975)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0074720/">Le jouet (1976)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0073196/">Je t&rsquo;aime moi non plus (1976)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0169173/">C&rsquo;était un rendez-vous (1976)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0074114/">Alice ou la dernière fugue (1977)</a></p>
+
+<h3>FR-1980</h3>
+
+<p><a href="https://www.imdb.com/title/tt0082269/">Diva (1981)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0082933/">Possession (1981)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0083611/">La balance (1982)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0086655/">L&rsquo;été meurtrier (1983)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0090095/">Subway (1985)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0088714/">L&rsquo;amour braque (1985)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0091497/">Mauvais sang (1986)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0091093/">Les fugitifs (1986)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0092550/">L&rsquo;ami de mon amie (1987)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0097872/">Mes nuits sont plus belles que vos jours (1989)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0097995/">Noce blanche (1989)</a></p>
+
+<h3>FR-1990</h3>
+
+<p><a href="https://www.imdb.com/title/tt0101428/">La Belle Noiseuse (1991</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0105682/">Un coeur en hiver (1992)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0101316/">L&rsquo;amant (1992)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0106866/">Fanfan (1993)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0110963/">La reine Margot (1994)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0110413/">Léon (1994)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0109702/">L&rsquo;eau froide (1994)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0114790/">Une femme française (1995)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0114086/">Al di là delle nuvole (1995)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0113247/">La haine (1995)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0115940/">Conte d&rsquo;été (1996)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0116650/">Irma Vep (1996)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0118996/">Dobermann (1997)</a></p>
+
+<p><strong><a href="https://www.youtube.com/watch?v=J5m-XiUvLgg">Marie Baie des Anges (1997)</a></strong></p>
+
+<p><a href="https://www.imdb.com/title/tt0142688/">The Ninth Gate (1999)</a></p>
+
+<h3>FR-2000</h3>
+
+<p><a href="https://www.imdb.com/title/tt0249380/">Baise-moi (2000)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0228786/">Les rivières pourpres (2000)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0164961/">Vidocq (2001)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0237534/">Le pacte des loups (2001)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0338977/">L&rsquo;esquive (2003)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0424237/">Lila dit ça (2004)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0411270/">De battre mon coeur s&rsquo;est arrêté (2005)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0411117/">L&rsquo;annulaire (2005)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0869977/">Naissance des pieuvres (2007)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt0875113/">99 francs (2007)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt1003052/">Secret défense (2008)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt1286809/">La journée de la jupe (2008)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt1064861/">De la guerre (2008)</a></p>
+
+<h3>FR-2010</h3>
+
+<p><a href="https://www.imdb.com/title/tt1600524/">Les amours imaginaires (2010)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt1570970/">Mes chères études (2010)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt1587877/">Tout ce qui brille (2010)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt1675434/">Intouchables (2011)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt1879030/">Q (2011)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt2278871/">La vie d&rsquo;Adèle (2013)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt2404461/">Le passé (2013)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt3365778/">Respire (2014)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt2191765/">Un moment d&rsquo;égarement (2015)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt4730986/">Divines (2016)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt4795546/">Nocturama (2016)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt8359848/">Climax (2018)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt8459250/">Shéhérazade (2018)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt8613070/">Portrait de la jeune fille en feu (2019)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt9632590/">Une fille facile (2019)</a></p>
+
+<h3>FR-2020</h3>
+
+<p><a href="https://www.imdb.com/title/tt13044528/">La Révolution (2020)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt13846526/">La place d&rsquo;une autre (2021)</a></p>
+
+<p><a href="https://www.imdb.com/title/tt12708658/">Les Olympiades, Paris 13e (2021)</a></p>
+
+<p>TBC&hellip;</p>
+</div>
+    <br>
+    <span class="separator">More</span>
+</div> <br>
+
+<div class="article">
+    <h2>Classical Light</h2>
+    <div class="summary"><p>Physics is beautiful, but it gets <a href="https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus">really tiresome</a> with QM and QFT. Here is a short list of experiments to remind myself that nature is not just about equations. Science ≡ attention to detail. Classical light ≡ classical electromagnetism.</p>
+</div>
+    <div class="content"><p>Physics is beautiful, but it gets <a href="https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus">really tiresome</a> with QM and QFT. Here is a short list of experiments to remind myself that nature is not just about equations. Science ≡ attention to detail. Classical light ≡ classical electromagnetism.</p>
+
+<p><a href="https://physicsteacher.blog/category/eratosthenes-size-of-the-earth-radius-of-the-earth-first-measurement/">Eratosthenes (240 BC).</a> Measuring the radius of Earth. &ldquo;You know,&rdquo; said the visitor, &ldquo;at noon on this day, in my home town there are no shadows.&rdquo;</p>
+
+<p><a href="https://prideout.net/blog/romer/">Ole Rømer (1671).</a> Io eclipse times measured on Earth six months apart. It turns out that the value is changing, and the experiment reveals something else.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Arago_spot">Arago White Spot (1818).</a> Shadows are not what they seem. The disk had to be nearly perfect (3% roughness would make the spot vanish). Similarly, one can obtain a black spot when an obstacle is replaced with an aperture.</p>
+
+<p><a href="https://youtu.be/8qVLMHW5cbY?t=783">P.N. Lebedev (1899).</a> Light exerts a mechanical pressure. Pavlo Victor shows the radiometric effect which P.N. Lebedev had to suppress along with the thermal convection.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Pound%E2%80%93Rebka_experiment">The Pound–Rebka experiment (1959)</a> measured a minuscule change of light&rsquo;s frequency due to gravity, confirming GR.</p>
+
+<p>More of this magic: <a href="https://www.youtube.com/watch?v=qsLqQC52NTY">Valerian Gervids</a>, <a href="https://youtu.be/ESAPg7w3wm8?t=2872">Walter Lewin</a>, <a href="https://youtu.be/oI_X2cMHNe0?t=1134">Veritasium</a>, <a href="https://www.youtube.com/watch?v=brPr1g-i2Tk">QuinnPhys</a>, <a href="https://www.youtube.com/watch?v=aXRTczANuIs">3Blue1Brown</a>&hellip;</p>
+
+<p><a href="http://www.ira.inaf.it/%7Eddallaca/L01_HDMHD.pdf">Daniele Dallacasa (Radioastronomy)</a>: &ldquo;Lectures will provide all (most of) the tools to understand what we observe in the Universe (i.e. radiation)&rdquo;.</p>
+</div>
+    <br>
+    <span class="separator">More</span>
+</div> <br>
+
+<div class="article">
+    <h2>A Sample of Lithuania (and a bit of Latvia)</h2>
+    <div class="summary"><p>I will collect here a few of my favorite links related to our culture. One can always dig for something deep, but my top 3 most liked things about Lithuania would be: (1) Our seashore (Palanga&hellip; sadly I am no writer to explain it), (2) schools provide free well-lit modern courts to practice sports and meet new people (unlike in the US or France, by the way), and (3) obscure old book exchange hubs where it is sometimes possible to meet a different kind of people.</p>
+</div>
+    <div class="content"><p>I will collect here a few of my favorite links related to our culture. One can always dig for something deep, but my top 3 most liked things about Lithuania would be: (1) Our seashore (Palanga&hellip; sadly I am no writer to explain it), (2) schools provide free well-lit modern courts to practice sports and meet new people (unlike in the US or France, by the way), and (3) obscure old book exchange hubs where it is sometimes possible to meet a different kind of people.</p>
+
+<p>Anyway, IT and software seems to be thriving, as everywhere. Native companies include: Vinted, Hostinger, Kilo.Health, Teltonika, NordVPN, Nordcurrent Group, TutoToons, No Brakes Games&hellip; Foreign branches: Dassault Systèmes, IBM, Canonical, Unity, Wix, Nasdaq, Kayak, Wargaming&hellip; I probably miss a lot of names here, see <a href="https://www.youtube.com/@PROTOINDUSTRIJA/videos">@PROTOINDUSTRIJA</a> about some work life here.</p>
+
+<p>Painters: <a href="https://www.youtube.com/watch?v=CNcCcQ38Sk4">Mikalojus Konstantinas Čiurlionis</a>, <a href="https://www.pinterest.com/pin/225461525066402919/">Arūnas Žilys</a>, <a href="https://youtu.be/amZBAYsepjY?t=1763">Никас Сафронов</a>.</p>
+
+<p>Cinema. <a href="https://www.imdb.com/title/tt0201195/">Žaibo nušviesti (1996)</a>, <a href="https://www.imdb.com/title/tt0811164/">Aš esi tu (2006)</a>, <a href="https://www.imdb.com/title/tt0929806/">Nuodėmės užkalbėjimas (2007)</a>, <a href="https://www.imdb.com/title/tt2994832/">Sangailės vasara (2015)</a>, <a href="https://www.imdb.com/title/tt7591430/">Išgyventi vasarą (2018)</a>.</p>
+
+<p>Books. Antanas Škėma: <a href="http://www.xn--altiniai-4wb.info/files/literatura/LH00/Antanas_%C5%A0k%C4%97ma._Balta_drobul%C4%97.LHP200.pdf">Balta drobulė (1958)</a>, Valdas Papievis: <a href="https://elvislab.lt/leidiniai/10674">Žiebtuvėliai anarchistai (2017)</a>.</p>
+
+<p>Music. Viacheslav Ganelin: <a href="https://youtu.be/gQJ-e-Dhzsk?t=795">1974</a>, <a href="https://www.youtube.com/watch?v=lKN4kEsBnVM">1976</a>, <a href="https://www.youtube.com/watch?v=TBIJI96uINY">1978</a>, <a href="https://www.youtube.com/watch?v=qt_C2APVFso">1984</a>, Artūras Barysas: <a href="https://www.youtube.com/watch?v=4OoWoF3hH1o">1977</a>, Foje: <a href="https://www.youtube.com/watch?v=F9_JL4LU3n4">1993</a>, <a href="https://www.youtube.com/watch?v=PofSYasg9gI">1995</a>, Eurika Masytė: <a href="https://www.youtube.com/watch?v=hmHhIvtua9w">1994</a>, Hiperbolė: <a href="https://www.youtube.com/watch?v=i5CnUpxUgNE&amp;list=PLSit8BZHJaWqnHPC9nQam3F8A74xz3CQg&amp;index=2">1995</a>, Karališka Erdvė: <a href="https://www.youtube.com/watch?v=wfISmBfMcS4">1996</a>, Lemon Joy: <a href="https://www.youtube.com/watch?v=TnHyJbdv7sc">2001</a>, <a href="https://www.youtube.com/watch?v=B-xsuUb9Ddw">2011a</a>, <a href="https://www.youtube.com/watch?v=a3d2rRC9ync">2011b</a>, Saulius Petreikis ir Siela: <a href="https://youtu.be/eNzLS9NY8Ws?t=121">2011</a>, Monika Liu: <a href="https://www.youtube.com/watch?v=Z-iC00Ggkgg">2013</a>, <a href="https://www.youtube.com/watch?v=CODY8b8bgBA">2020</a>, <a href="https://www.youtube.com/watch?v=sXd0vDQGi3c">2021</a>, Antis ft. Leon Somov &amp; Jazzu: <a href="https://www.youtube.com/watch?v=UrbZhlhxP-o">2014</a>, Kaia, Paulina ir Leon Somov: <a href="https://www.youtube.com/watch?v=j6c10T55fHg&amp;list=RDj6c10T55fHg&amp;start_radio=1">2017</a>, <a href="https://www.youtube.com/watch?v=mK883bdLPts">2018</a>, Lapkričio dvidešimtosios orkestras: <a href="https://www.youtube.com/watch?v=12uMYmqCr0E">2021</a>, GJan: <a href="https://www.youtube.com/watch?v=_cpXnJ_FVQY">2023</a>.</p>
+
+<p>A bit of Latvia: <a href="https://www.youtube.com/watch?v=GZZ0ZQewPAU">Raimonds Pauls (1980)</a>, <a href="https://youtu.be/GbgHkFXDh6A?t=156">Ivars Vīgners (1983)</a>, <a href="https://www.youtube.com/watch?v=BZM5g8kxTCY">Jumprava (1988)</a>, <a href="https://www.youtube.com/watch?v=J-CmEbXH90M">Brainstorm (2001)</a>, <a href="https://www.youtube.com/watch?v=6MMBGaDCvFc">Katrīna Gupalo (2020)</a>.</p>
+</div>
+    <br>
+    <span class="separator">More</span>
+</div> <br>
         <footer class="footer">
-            <a href="https://aabbtree77.github.io/" target="_blank">The Old Blog</a>
+            <a href="https://aabbtree77.github.io/about/about.html" target="_blank">About the Author</a>
         </footer>
     </div>
     <script src="js/scripts.js"></script>

@@ -1,0 +1,153 @@
+
+<div class="article">
+    <h2>Tensor Algebra</h2>
+    <div class="summary"><p><a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Donn G. Shankland (1970)</a> reveals how to parse mysterious phrases such as (i) &ldquo;tensor fields contain irreducible representations of the Lorentz group&rdquo;, (ii) &ldquo;antisymmetric two-tensor field can carry two particle triplets&rdquo;, and (iii) &ldquo;a free-field equation is nothing but an invariant record of which components are superfluous&rdquo;. I will add here a few notes that might help one to decipher his paper.</p>
+</div>
+    <div class="content"><p><a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Donn G. Shankland (1970)</a> reveals how to parse mysterious phrases such as (i) &ldquo;tensor fields contain irreducible representations of the Lorentz group&rdquo;, (ii) &ldquo;antisymmetric two-tensor field can carry two particle triplets&rdquo;, and (iii) &ldquo;a free-field equation is nothing but an invariant record of which components are superfluous&rdquo;. I will add here a few notes that might help one to decipher his paper.</p>
+
+<p>An archetypical problem that ChatGPT cannot solve: Given the <a href="https://en.wikipedia.org/wiki/Four-vector">four-vector</a> <span class="math inline">\(k_{\mu}\)</span> and <a href="https://en.wikipedia.org/wiki/Metric_tensor">the metric tensor</a> <span class="math inline">\(g_{\mu\nu}\)</span>, write down the most general dimensionless tensor <span class="math inline">\({T_{\mu\nu}}^{\rho \sigma}\)</span> symmetric under the permutations of the covariant indices <span class="math inline">\((\mu, \nu)\)</span>, and also symmetric w.r.t. the permutations of contravariant indices <span class="math inline">\((\rho, \sigma)\)</span>. It should be a sum of linearly independent terms, each with a manifest symmetry, and at most fourth order in <span class="math inline">\(k_{\mu}\)</span>.</p>
+
+<p><a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> jumps into the answer, which is a linear combination of</p>
+<p><span class="math display">\[
+\begin{align}
+X_{1} &amp; = \frac{1}{4} {g_{(\mu}}^{(\rho} {g_{\nu)}}^{\sigma)}\,,\\
+X_{2} &amp; = g_{\mu \nu} g^{\rho \sigma}\,, \\
+X_{3} &amp; = \frac{1}{k^2} g_{\mu \nu} k^{\rho} k^{\sigma}\,, \\
+X_{4} &amp; = \frac{1}{k^2} k_{\mu} k_{\nu} g^{\rho \sigma}\,, \\
+X_{5} &amp; = \frac{1}{k^4} k_{\mu} k_{\nu} k^{\rho} k^{\sigma}\,, \\
+X_{6} &amp; = \frac{1}{k^2} k_{(\mu} {g_{\nu)}}^{(\rho} k^{\sigma)}\,.
+\end{align}
+\]</span></p><p>Here the division by 4 of the first basis element is not important, but it would turn <span class="math inline">\(X_{1}\)</span> into an index symmetrization operator if one acted with it on any two-index tensor.</p>
+
+<p>The logic is clear. One groups the combinations of primitives according to their distinct combinatorial types. Linear independence is verified by choosing a few random non-zero elements of a tensor.</p>
+
+<p>One can view tensors as matrices by appending each element with an indicator basis:</p>
+<p><span class="math display">\[
+\begin{align}
+e^{\mu}\otimes e^{\nu}\otimes e_{\rho}\otimes e_{\sigma}\,,
+\end{align}
+\]</span></p><p>with the implied summation over repeated indices. Thus, each <span class="math inline">\(X_{i}\)</span> can be seen as the sum of 256 matrices of size 16x16. Here one can assume that the upper/lower index corresponds to the row/column vector, resp.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Kronecker_product">The Kronecker product</a> has an interesting property:</p>
+<p><span class="math display">\[
+\begin{align}
+a^{i}\otimes b^{j} &amp;\neq b^{j}\otimes a^{i}\,,\\
+a^{i}\otimes b_{j} &amp;= b_{j}\otimes a^{i}\,.
+\end{align}
+\]</span></p><p>Along with the associativity, this reveals the tensor index positioning ambiguity:</p>
+<p><span class="math display">\[
+X{^i}{^j}{_k} = X{^i}{_k}{^j} = X{_k}{^i}{^j}.
+\]</span></p><p>It is tempting to write <span class="math inline">\(X^{ij}_{k}\)</span>, but then one cannot always raise or lower an index uniquely.</p>
+
+<p>A tensor product is defined with the implied summation over repeated indices:</p>
+<p><span class="math display">\[
+A\, B \equiv {A_{\mu \nu}}^{\alpha \beta} {B_{\alpha \beta}}^{\rho \sigma}\,.
+\]</span></p><p><strong>Magically, these tensor basis expressions form an algebra under this product, but I do not understand why. I can only verify that this fact indeed takes place.</strong></p>
+
+<p>Let us correct one symmetric tensor product:</p>
+<p><span class="math display">\[
+X_{6} X_{6} = 8 X_{5} + 2 X_{6}.
+\]</span></p><p>The definitions of the product and index symmetrization <span class="math inline">\((\cdot, \cdot)\)</span> lead to <span class="math inline">\(X_{6} X_{6}\)</span> expressed as</p>
+<p><span class="math display">\[
+\begin{align}
+&amp; \equiv \frac{1}{k^2} k_{(\mu} {g_{\nu)}}^{(\alpha} k^{\beta)} \frac{1}{k^2} k_{(\alpha} {g_{\beta)}}^{(\rho} k^{\sigma)}\\
+ &amp;= \frac{1}{k^4} \Big( k_{\mu} {g_{\nu}}^{\alpha} k^{\beta} + k_{\mu} {g_{\nu}}^{\beta} k^{\alpha} \\
+            &amp; \;\;\;\;+ k_{\nu} {g_{\mu}}^{\alpha} k^{\beta} + k_{\nu} {g_{\mu}}^{\beta} k^{\alpha} \Big)\\
+            &amp; \;\;\;\;\cdot \Big( k_{\alpha} {g_{\beta}}^{\rho} k^{\sigma} + k_{\alpha} {g_{\beta}}^{\sigma} k^{\rho} \\
+            &amp; \;\;\;\;+ k_{\beta} {g_{\alpha}}^{\rho} k^{\sigma} + k_{\beta} {g_{\alpha}}^{\sigma} k^{\rho} \Big).
+\end{align}
+\]</span></p><p>This will produce 16 terms, but they will further simplify with the use of</p>
+<p><span class="math display">\[
+\begin{align}
+k_{\alpha} k^{\alpha} &amp; = k^2 \\
+{g_{\nu}}^{\alpha}k_{\alpha} &amp;= k_{\nu} \\
+{g_{\nu}}^{\beta} {g_{\beta}}^{\sigma} &amp;= {g_{\nu}}^{\sigma}\;.
+\end{align}
+\]</span></p><p>I will not write the whole process, but let us multiply the first terms in the parentheses, just to give one an idea:</p>
+<p><span class="math display">\[
+\begin{align}
+t_{1} &amp; = k_{\mu} {g_{\nu}}^{\alpha} k^{\beta} \cdot k_{\alpha} {g_{\beta}}^{\rho} k^{\sigma} \\
+&amp; = k_{\mu} \big({g_{\nu}}^{\alpha} k_{\alpha}\big) \big({g_{\beta}}^{\rho} k^{\beta}\big) k^{\sigma} \\
+&amp;= k_{\mu} k_{\nu} k^{\rho} k^{\sigma}.
+\end{align}
+\]</span></p><p>A page later ;) there will be 8 such terms and a doubled <span class="math inline">\(X_{6}\)</span> left. It is <span class="math inline">\(8 X_{5} + 2 X_{6}\)</span>, not <span class="math inline">\(8 X_{4} + 2 X_{6}\)</span> in <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a>.</p>
+
+<p>All the computed traces of the algebra of the symmetric two-tensor field are correct. I will only note here the definition of a trace:</p>
+<p><span class="math display">\[
+\begin{align}
+\textit{tr}\,{X_{\mu \nu}}^{\rho \sigma}  \equiv {X_{\mu \nu}}^{\mu \nu}.
+\end{align}
+\]</span></p><p>In order to calculate these tensorial traces one has to know the values of <span class="math inline">\(g_{ij}\)</span> and the mixed tensor</p>
+<p><span class="math display">\[
+\begin{align}
+{g_{i}}^{j}={\delta_{i}}^{j}=\begin{cases}
+0 &amp; i \ne j \\
+1 &amp; i = j
+\end{cases}\;\;.
+\end{align}
+\]</span></p><p>There is no need to know these values when getting the product tables.</p>
+
+<p>The products and traces determine the spectrum. <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> applies <a href="https://en.wikipedia.org/wiki/Faddeev%E2%80%93LeVerrier_algorithm">the Faddeev - LeVerrier algorithm</a>, while <a href="https://spiral.imperial.ac.uk/bitstream/10044/1/13413/2/Barnes-KJ-1963-PhD-Thesis.pdf">K.J. Barnes (1963)</a> goes for the matrix projection operators. Mysteriously, the eigenvalues will have multiplicities which can be derived independently from the tensor product of two <span class="math inline">\(sl(2, \mathbb{C})\)</span> algebras in the theory of the Lorentz group (Lorentz with &ldquo;t&rdquo;). The eigenvector equations lead to the Lorenz gauge condition (Lorenz without &ldquo;t&rdquo;).</p>
+
+<p><a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> shows how one can get even eigenvalue multiplicities (&ldquo;half integer spins&rdquo;) with <a href="https://en.wikipedia.org/wiki/Gamma_matrices">the gamma matrices</a>. The case with a vector and a spinor index leads to the rapid growth of complexity.</p>
+
+<p>The algebra is constructed from <span class="math inline">\(g \equiv \eta\)</span>, a four-vector <span class="math inline">\(p_{\mu}\)</span>, and a four-vector-like <span class="math inline">\(\gamma_{\mu}\)</span> which also carries suppressed spinor indices. One arranges all the distinct products, et voilà. What is not trivial is that one needs to treat the matrix <span class="math inline">\(\boldsymbol{p} \equiv p\llap{\unicode{x2215}}\)</span> as an independent primitive which effectively doubles the number of basis elements from five to ten. <span class="math inline">\(\boldsymbol{p}\)</span> has no vector indices and hides spinorial indices implicitly.</p>
+
+<p>How does one parse expressions such as <span class="math inline">\(\gamma_{\mu}\gamma^{\nu} \boldsymbol{p}\)</span>? Given <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\nu\)</span>, it is a product of three 4x4 matrices. The matrix product is implicit.</p>
+
+<p>The resulting phrase is likely erroneous: &ldquo;&hellip; we find, together with their antiparticles, the following groups of particles: a quadruplet, and two doublets.&rdquo;</p>
+
+<p>Weinberg&rsquo;s QFT, Vol. 1, pages 229-233, would indicate that <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> must have missed a triplet and its anti-triplet, but the arguments rely on group theory which is an <a href="https://physics.stackexchange.com/questions/269234/1-2-0-representation-of-the-lorentz-group-so1-3">overwhelming detour</a>.</p>
+
+<p>The main strength of this work is that it provides an original way to treat irreducibility without group theory. A lot can also be automated. <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> uses advanced Faddeev-LeVerrier algorithm which allows to compute eigenvectors. It works even in the presence of multiple eigenvalues, see e.g. <a href="https://core.ac.uk/download/pdf/81192811.pdf">Helmberg and Wagner (1993).</a></p>
+
+<p>The eigenvectors are linear combinations of the basis elements of the algebra that depend on the eigenvalue <span class="math inline">\(\lambda\)</span>. By zeroing out the eigenvalues of the particles we want to remove from a field, we obtain operators which act on tensor fields as auxiliary conditions. They become PDEs with <span class="math inline">\(k_{\mu} \rightarrow \partial_{\mu}\)</span>. What do we get with the eigenvectors of nonzero eigenvalues?</p>
+
+<p>The latter should lead to free field (wave) equations, which is visible in the alternative formalism of <a href="https://en.wikipedia.org/wiki/Joos%E2%80%93Weinberg_equation">Joos-Weinberg</a> clarified a lot by <a href="https://arxiv.org/abs/nucl-th/9704066">Ahluwalia (1991)</a>. Adjusted free-space Green functions of these wave PDEs serve as propagators in <a href="https://cerncourier.com/a/quantum-electrodynamics/">Feynman diagram-based calculations</a>. The EM interactions are often added via <a href="https://en.wikipedia.org/wiki/Rarita%E2%80%93Schwinger_equation"><span class="math inline">\(\partial_{\mu}\rightarrow \partial_{\mu}-ieA_{\mu}\)</span></a>, but this mechanism does not always work.</p>
+
+<p>Steven Weinberg did not spend much time on consistent wave equations, but rather on consistent S-matrices, which is closer to nuclear reactions and scattering experiments. <a href="https://arxiv.org/a/ahluwalia_d_1.html">Dharam Vir Ahluwalia</a>, <a href="https://ir.canterbury.ac.nz/items/81a8dc3d-d6f4-446a-8392-0c2f4f69f033">Adam Gillard</a>, and others probe the Joos-Weinberg formalism in modern domains such as neutrinos and dark matter.</p>
+
+<p>Ultimately, <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a> provides only a &ldquo;combine-split&rdquo; mathematical puzzle game. As an input, we specify the number of spinorial and tensorial indices, and the tensorial symmetry or antisymmetry. In the output, we receive the list of &ldquo;particle types&rdquo; and the list of PDEs to remove each type. We control PCT and the number of field components by choosing &ldquo;gamma-like&rdquo; primitives involving Pauli matrices.</p>
+
+<p>According to group theory, combining indices means taking &ldquo;tensor products <span class="math inline">\((m,n)\otimes (k,l)\)</span> of Lorentz irreps&rdquo;, clf. Weinberg&rsquo;s QFT, Vol. 1, pages 229-233:</p>
+
+<p><span class="math inline">\((0,0)\)</span>: A scalar.</p>
+
+<p><span class="math inline">\((\frac{1}{2},\frac{1}{2})\)</span>: A single four-vector index.</p>
+
+<p><span class="math inline">\((\frac{1}{2},0)\oplus (0,\frac{1}{2})\)</span>: A full single spinor index.</p>
+
+<p><span class="math inline">\((1,1)\)</span>: Two symmetric tensor indices.</p>
+
+<p><span class="math inline">\((1,0)\oplus (0,1)\)</span>: Two asymmetric tensor indices.</p>
+
+<p>Scalars are not used by <a href="https://aapt.scitation.org/doi/10.1119/1.1976018">Shankland (1970)</a>, but they appear in the spectrum as singlets. In a symmetric two-index tensor case, to remove a singlet also means to make the tensor traceless.</p>
+
+<p>Combining a vector and a spinor index implies taking the product <span class="math inline">\((\frac{1}{2},\frac{1}{2}) \otimes (\frac{1}{2},0)\oplus (0,\frac{1}{2})\)</span>
+which splits into a vector and an irreducible component <span class="math inline">\((1,\frac{1}{2}) \oplus (\frac{1}{2},1)\)</span>, clf. Weinberg&rsquo;s QFT, Vol. 1, page 232. We can call the latter a &ldquo;spin <sup>3</sup>&frasl;<sub>2</sub>&rdquo; field. In the Joos-Weinberg formalism, this is a different irreducible component <span class="math inline">\((\frac{3}{2},0) \oplus (0,\frac{3}{2})\)</span>. It could still be produced in Shankland&rsquo;s algebra, but not with one vector and one spinor index.</p>
+
+<p>Why a single &ldquo;spin&rdquo; parameter? <span class="math inline">\((m,n)\)</span> is not the Kronecker product <span class="math inline">\(m\otimes n\)</span> of &ldquo;rotations&rdquo;, but Shankland&rsquo;s eigenvalue multiplicities follow this pattern, and the scalar value <span class="math inline">\(m+m\)</span> also describes the maximal &ldquo;degrees of freedom of a particle&rdquo;. The Kronecker product splits into &ldquo;spin multiplicities&rdquo; <span class="math inline">\(s=|m-n|,\ldots, m+n\)</span>, e.g.</p>
+<p><span class="math display">\[
+\begin{align}
+(1,\frac{1}{2}) = \frac{1}{2}\oplus 1 \oplus \frac{3}{2}\,.
+\end{align}
+\]</span></p><p>The eigenvalue multiplicities will have <span class="math inline">\(2s+1\)</span> values. In Shankland&rsquo;s terminology, we obtain a doublet, a triplet, and a quadruplet from the equation above. However, this collection does not constitute three particles. It is one half of the irreducible &ldquo;spin <sup>3</sup>&frasl;<sub>2</sub>&rdquo; particle <span class="math inline">\((1,\frac{1}{2}) \oplus (\frac{1}{2},1)\)</span>.</p>
+
+<p>I am very vague here, being oblivious to complex vs real, Cartesian vs direct vs Kronecker products, groups vs algebras&hellip; The point here is only to show that group theory: (i) allows to verify Shankland&rsquo;s eigenvalue multiplicities, and (ii) indicates that not every multiple eigenvalue is a &ldquo;separate particle&rdquo;. The whole group theory/QFT thing is beyond cumbersome. It is hilarious to find out that even Weinberg (!) uses the word <strong>complicated</strong> several times in his QFT Vol 3.</p>
+
+<p>Although not of direct relevance, a human-readable group theory-free way to build invariant cost functions can be found in the works of P.A. Zhilin: <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_rus.pdf">1</a>, <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_eng.pdf">2</a>. It leads to a different kind of irreducibility and &ldquo;particles&rdquo;.</p>
+
+<p>One can find some mildly successful uses/hints of tensor algebras in <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.106.1345">Phys. Rev. 106, 1345 (1957)</a>; <a href="https://link.springer.com/article/10.1007/BF02752873">Nuovo Cimento, 43, 475 (1966)</a>; <a href="https://link.springer.com/article/10.1007/BF02818340">Nuovo Cimento 47, 145 (1967)</a>; <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.153.1652">Phys. Rev. 153, 1652 (1967)</a>; <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.161.1631">Phys. Rev. 161, 1631 (1967)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.8.2650">Phys. Rev. D 8, 2650 (1973)</a>; <a href="https://inspirehep.net/literature/98459">Nuovo Cimento 28, 409 (1975)</a>; <a href="https://arxiv.org/abs/hep-th/9212008">Phys. Lett. B 301 4 339 (1993)</a>; <a href="https://arxiv.org/abs/hep-ph/0103172">Phys. Rev. C 64, 015203 (2001)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.64.125013">Phys. Rev. D 64, 125013 (2001)</a>; <a href="https://www.imath.kiev.ua/~nikitin/PAPER26.pdf">Hadronic J. 26, 351 (2003)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.67.085021">Phys. Rev. D 67, 085021 (2003)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.67.125011">Phys. Rev. D 67, 125011 (2003)</a>; <a href="https://arxiv.org/abs/hep-th/0505255">Nucl. Phys. B724, 453 (2005)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.74.084036">Phys. Rev. D 74, 084036 (2006)</a>; <a href="https://birdtracks.eu/">P. Cvitanović (2008)</a>; <a href="https://royalsocietypublishing.org/doi/10.1098/rspa.2010.0149">V. Monchiet and G. Bonnet (2010)</a>; <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.115043">Phys. Rev. D 97, 115043 (2018)</a>; <a href="https://news.stonybrook.edu/facultystaff/qa-with-breakthrough-prize-winner-peter-van-nieuwenhuizen/">SUGRA and CDC</a>&hellip;</p>
+
+<p>Who wants to clean the mess?</p>
+
+<div style="text-align:center">
+<a style="font-size: 1rem;" href="https://youtu.be/Y183gJQ9yCY?t=20">Sign the contract big boy...</a>
+<a href="https://voi.id/en/memori/185165">
+<img src="article2/IronMike-min-rs.png" style="display: block; margin: auto;" title="Iron Mike" width="50%">
+</a>
+</div>
+</div>
+    <br>
+    <span class="separator">More</span>
+</div> <br>
