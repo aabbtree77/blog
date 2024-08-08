@@ -13,13 +13,19 @@ Here is what I really need:
 - [x] The ability to test everything locally directly by opening index.html in a browser. No cdn, node_modules, cors, http servers.
 - [ ] Code syntax highlighter. 
 
-What I do not care about: All the meta stuff like tags, reading time, time stamps, comments, contact forms, search bars, TOC, archive, recent posts, suggestions, internal navigation links, CMS/online rich text editor. A blog is not a corporate media system, it is about personal notes, mostly. A single github readme would suffice, but it is better to control Markdown and LaTeX rendering explicitly and locally.
-
-I do not care about LaTeX either, but see [this raw Markdown](https://raw.githubusercontent.com/aabbtree77/aabbtree77.github.io/main/shankland/shankland.md) and [the rendered result](https://github.com/aabbtree77/aabbtree77.github.io/blob/main/shankland/shankland.md) for an example if you need to add math to your html pages (not a good idea).
+What I do not care about: All the meta stuff like tags, reading time, time stamps, comments, contact forms, search bars, TOC, archive, recent posts, suggestions, internal navigation links, CMS/online rich text editor. A single github readme would suffice, but it is better to control Markdown and LaTeX rendering explicitly and locally.
 
 # Setup
 
-Install Go, cd into gocode, run "go build", move the resulting "md2html" to the root of this repo. Run it ("./md2html"). It will scan all the root level "article*" folders with "index.md" files, turn Markdown to HTML and then inject those HTML pieces into "index_template.html" resulting in one big "index.html". This "index.html" file, along with the "css", "js", and "imgs" folders, serves as a blog. I host it using Github Pages.
+Install Go, cd into gocode, run `go build`, `cd ..` into the root of this repo. Run `.gocode/md2html`. It will scan all the root level "article*" folders with "index.md" files, turn Markdown to HTML and then inject those HTML pieces into "index_template.html" resulting in one big "index.html". This "index.html" file, along with the "css", "js", and "imgs" folders, serves as a blog. I host it using Github Pages.
+
+If you add images inside the blog article folder `article*`, they need to be referenced with the folder name:
+
+```html
+<img src="article2/IronMike-min-rs.png" style="display: block; margin: auto;" title="Iron Mike" width="50%">
+```
+
+This is not ideal, but it removes the need to store images inside a single global `/img/` folder, and keeps the Go code simple. If you change the folder name from `article*` to some other `article*`, you need to change all the references inside `index.md`.
 
 # References
 

@@ -25,6 +25,21 @@ a {
     background-color: #2a323c;
 }
 
+@media only screen and (max-width: 1023px) {
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background-color: #2a323c;
+}
+}
+
 .title {
     text-align: center;
     color: #848c97;
