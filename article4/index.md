@@ -1,10 +1,12 @@
-# Spintires
+# Mud
 
 [Spintires: The Original Game (2014-2020)](https://en.wikipedia.org/wiki/Spintires) is an outstanding game about off-road cargo delivery missions with hypnotizing realism of mud and vehicle physics.
 
-[A mess with unbalanced rewards between Pavel Zagrebelnyy, Saber, and Oovee](https://www.ign.com/articles/stuck-in-the-mud-how-a-tiny-beloved-driving-game-sparked-a-bizarre-decade-long-feud) has led them to three separate games which are missing the main question to answer: Will a given vehicle (with cargo) pass the swamp or not, what does work, what does not?
+[A mess with imbalanced rewards between Pavel Zagrebelnyy, Saber, and Oovee](https://www.ign.com/articles/stuck-in-the-mud-how-a-tiny-beloved-driving-game-sparked-a-bizarre-decade-long-feud) has led them to three separate games which are missing the main question to answer: Will a given vehicle (with cargo) pass the swamp or not, what does work, what does not?
 
-There should be at least several types of mud: (i) the denser swamps which are better handled with tracked vehicles, and (ii) those which can be conquered only by the vehicles with very large diameter (>1600mm), low pressure tires. DT-30, Trom-8, and Trom-20, with a proper Sherp/Bigbo machines which can get through mild forests and serious swamps. Siberia with Putorana Plateau, Kamchatka, the Arctic. Not 30 maps with 1000 missions of bs to choose from.
+There should be at least several types of mud: (i) the denser swamps which are better handled with tracked vehicles, and (ii) those for the vehicles with very large diameter (>1600mm) low pressure tires, where anything else either sinks or gets stuck. 
+
+Add DT-30, Trom-8, and Trom-20, with a proper Sherp/Bigbo machines which can get through forests and serious swamps. Siberia with Putorana Plateau, Kamchatka, the Arctic. Not 30 maps with 1000 missions of bs.
 
 Imagine the best of Spintires and [BeamNg.drive](https://en.wikipedia.org/wiki/BeamNG.drive) united into a single game.
 
@@ -13,8 +15,6 @@ More physics, geometry, details. A deeper forest. We do not know how deep a fore
 ### References
 
 Impulse-based reaction model: [0](https://en.wikipedia.org/wiki/Collision_response), [1](https://www.amazon.com/Game-Physics-David-H-Eberly/dp/0123749034), [2](https://github.com/RandyGaul/qu3e).
-
-[Gangrena.](https://youtu.be/KAeGBYC2ikY?t=2409)
 
 [Kraz 255.](https://www.youtube.com/watch?v=K32NTMG84jo)
 

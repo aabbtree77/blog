@@ -1,4 +1,4 @@
-# Tensor Algebra
+# Tensors
 
 [Donn G. Shankland (1970)](https://aapt.scitation.org/doi/10.1119/1.1976018) reveals how to parse mysterious phrases such as (i) "tensor fields contain irreducible representations of the Lorentz group", (ii) "antisymmetric two-tensor field can carry two particle triplets", and (iii) "a free-field equation is nothing but an invariant record of which components are superfluous". I will add here a few notes that might help one to decipher his paper.
 
