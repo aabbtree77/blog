@@ -1,6 +1,6 @@
 # Lithuania (and a bit of Latvia)
 
-A sample of Lithuanian painters, cinema, books, music.
+A sample of Lithuanian painters, cinema, books, music. Created by a random Lithuanian.
 
 Painters: [Mikalojus Konstantinas Čiurlionis](https://www.youtube.com/watch?v=CNcCcQ38Sk4), [Arūnas Žilys](https://www.pinterest.com/pin/225461525066402919/), [Никас Сафронов](https://youtu.be/amZBAYsepjY?t=1763). 
 

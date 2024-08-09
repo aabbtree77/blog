@@ -1,6 +1,8 @@
 # Mud
 
-[Spintires: The Original Game (2014-2020)](https://en.wikipedia.org/wiki/Spintires) is an outstanding game about off-road cargo delivery missions with hypnotizing realism of mud and vehicle physics.
+Mechanics may feel dull and done, but this is true only when speaking of spherical horses in a vacuum. 
+
+Consider [Spintires: The Original Game (2014-2020)](https://en.wikipedia.org/wiki/Spintires), which is an outstanding simulation/game about off-road cargo delivery missions with hypnotizing realism of mud and vehicle physics.
 
 [A mess with imbalanced rewards between Pavel Zagrebelnyy, Saber, and Oovee](https://www.ign.com/articles/stuck-in-the-mud-how-a-tiny-beloved-driving-game-sparked-a-bizarre-decade-long-feud) has led them to three separate games which are missing the main question to answer: Will a given vehicle (with cargo) pass the swamp or not, what does work, what does not?
 
@@ -10,7 +12,7 @@ Add DT-30, Trom-8, and Trom-20, with a proper Sherp/Bigbo machines which can get
 
 Imagine the best of Spintires and [BeamNg.drive](https://en.wikipedia.org/wiki/BeamNG.drive) united into a single game.
 
-More physics, geometry, details. A deeper forest. We do not know how deep a forest can be.
+More physics, geometry, details. Deeper forests, even more wilderness.
 
 ### References
 

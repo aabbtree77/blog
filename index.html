@@ -52,28 +52,20 @@
 
 <li><p><a href="https://github.com/maierfelix/mini-js/tree/master">mini-js</a>: &ldquo;Minimal self-hosted JavaScript compiler in 1k lines of code.&rdquo;</p></li>
 
-<li><p><a href="https://github.com/search?q=monkey+interpreter">Monkey</a>: A minimal Js-like language implemented with a recursive descent parser, in Go. Lots of following!</p></li>
+<li><p><a href="https://github.com/search?q=monkey+interpreter">Monkey</a>: A minimal Js-like language interpreter and bytecode VM implemented with a recursive descent parser, in Go. Lots of following!</p></li>
 
 <li><p><a href="https://benhoyt.com/writings/mugo/">Mugo</a>: A subset of Go compiled to the x86-64 assembly, in Go.</p></li>
-
-<li><p><a href="https://www.youtube.com/watch?v=R7EEoWg6Ekk">M/o/Vfuscator</a>: The single instruction C compiler.</p></li>
 </ul>
 
 <h3>Distributed Systems</h3>
 
 <ul>
-<li><p><a href="https://martinfowler.com/bliki/FirstLaw.html">Martin Fowler</a>: &ldquo;My First Law of Distributed Object Design: Don&rsquo;t distribute your objects.&rdquo;</p></li>
-
-<li><p><a href="https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go">Sameer Ajmani</a>: Simulating a Real-World System in Go.</p></li>
-
-<li><p><a href="https://www.youtube.com/watch?v=SJaEbmeAI0o">Web Dev Cody</a>: Why understanding concurrency in Go is so important. Initially called &ldquo;This is the biggest Go lang footgun.&rdquo;</p></li>
+<li><a href="https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go">Sameer Ajmani</a>: Simulating a Real-World System in Go.</li>
 </ul>
 
 <h3>Design</h3>
 
 <ul>
-<li><p><a href="https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488">Cliff Brake</a>: How to create a presentation in draw.io.</p></li>
-
 <li><p><a href="https://dynomight.net/lists/">Dynomight</a>: How I learned to stop worrying and structure all writing as a list.</p></li>
 
 <li><p><a href="https://www.youtube.com/watch?v=qyomWr_C_jA">Sajid</a>: The Easy Way to Design Top Tier Websites.</p></li>
@@ -238,9 +230,11 @@ which splits into a vector and an irreducible component <span class="math inline
 
 <div class="article">
     <h2>Lie Groups</h2>
-    <div class="summary"><p>There is a theorem in Lie theory which states: An invariant multivariate function <span class="math inline">\(f\)</span> satisfies the necessary and sufficient condition <span class="math inline">\(Gf=0\)</span>, where <span class="math inline">\(G\)</span> is the Lie group generator, see e.g. § 68, page 82 in <a href="https://archive.org/details/introductorytrea00campuoft">J. E. Campbell (1903)</a>. Abraham Cohen (1911) and Leonard Eugene Dickson (1924) are also readable (Bourbaki-free). <a href="https://ru.wikipedia.org/wiki/%D0%96%D0%B8%D0%BB%D0%B8%D0%BD,_%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_(%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA)">Pavel Zhilin (2003)</a>  extends the theorem to the functions of multiple transforming objects of different types (vectors and matrices): <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_rus.pdf">(2003 Ru)</a>, <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_eng.pdf">(2005 Eng)</a>.</p>
+    <div class="summary"><p>Advanced mathematics severely suffers from two big problems. Firstly, people tend to wipe out the initial problem and context which has spawned a new domain, in favour of axiomatics. The hope is that axiomatics better compresses knowledge, but we get the opposite. The only way to understand where we are, globally, is to trace history. We may have tons of theory books, but there is only one historical path and the set of big events is quite finite, even in modern mathematics. The second issue is the so called &ldquo;framework within a framework&rdquo; problem. Some rich programs of Bernhard Riemann, Sophus Lie, Felix Klein, Henri Poincaré start out from concrete problems solvable with calculus and linear algebra. This has little to do with the Bourbaki program, measure theory, manifolds, and all that crap bolted on later. Consider an example of Lie groups approached &ldquo;the wrong way&rdquo;.</p>
 </div>
-    <div class="content"><p>There is a theorem in Lie theory which states: An invariant multivariate function <span class="math inline">\(f\)</span> satisfies the necessary and sufficient condition <span class="math inline">\(Gf=0\)</span>, where <span class="math inline">\(G\)</span> is the Lie group generator, see e.g. § 68, page 82 in <a href="https://archive.org/details/introductorytrea00campuoft">J. E. Campbell (1903)</a>. Abraham Cohen (1911) and Leonard Eugene Dickson (1924) are also readable (Bourbaki-free). <a href="https://ru.wikipedia.org/wiki/%D0%96%D0%B8%D0%BB%D0%B8%D0%BD,_%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_(%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA)">Pavel Zhilin (2003)</a>  extends the theorem to the functions of multiple transforming objects of different types (vectors and matrices): <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_rus.pdf">(2003 Ru)</a>, <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_eng.pdf">(2005 Eng)</a>.</p>
+    <div class="content"><p>Advanced mathematics severely suffers from two big problems. Firstly, people tend to wipe out the initial problem and context which has spawned a new domain, in favour of axiomatics. The hope is that axiomatics better compresses knowledge, but we get the opposite. The only way to understand where we are, globally, is to trace history. We may have tons of theory books, but there is only one historical path and the set of big events is quite finite, even in modern mathematics. The second issue is the so called &ldquo;framework within a framework&rdquo; problem. Some rich programs of Bernhard Riemann, Sophus Lie, Felix Klein, Henri Poincaré start out from concrete problems solvable with calculus and linear algebra. This has little to do with the Bourbaki program, measure theory, manifolds, and all that crap bolted on later. Consider an example of Lie groups approached &ldquo;the wrong way&rdquo;.</p>
+
+<p>There is a theorem in Lie theory which states: An invariant multivariate function <span class="math inline">\(f\)</span> satisfies the necessary and sufficient condition <span class="math inline">\(Gf=0\)</span>, where <span class="math inline">\(G\)</span> is the Lie group generator, see e.g. § 68, page 82 in <a href="https://archive.org/details/introductorytrea00campuoft">J. E. Campbell (1903)</a>. Abraham Cohen (1911) and Leonard Eugene Dickson (1924) are also readable (Bourbaki-free). <a href="https://ru.wikipedia.org/wiki/%D0%96%D0%B8%D0%BB%D0%B8%D0%BD,_%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_(%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA)">Pavel Zhilin (2003)</a>  extends the theorem to the functions of multiple transforming objects of different types (vectors and matrices): <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_rus.pdf">(2003 Ru)</a>, <a href="http://teormeh.net/Zhilin_New/pdf/Zhilin_Invariant_eng.pdf">(2005 Eng)</a>.</p>
 
 <p>The invariance requirement is posed as a functional equation. It is solved with a trick which gives a single weight to all the group parameters (I would have differentiated w.r.t. all the parameters independently, only to become lost).</p>
 
@@ -252,9 +246,11 @@ which splits into a vector and an irreducible component <span class="math inline
 
 <div class="article">
     <h2>Mud</h2>
-    <div class="summary"><p><a href="https://en.wikipedia.org/wiki/Spintires">Spintires: The Original Game (2014-2020)</a> is an outstanding game about off-road cargo delivery missions with hypnotizing realism of mud and vehicle physics.</p>
+    <div class="summary"><p>Mechanics may feel dull and done, but this is true only when speaking of spherical horses in a vacuum.</p>
 </div>
-    <div class="content"><p><a href="https://en.wikipedia.org/wiki/Spintires">Spintires: The Original Game (2014-2020)</a> is an outstanding game about off-road cargo delivery missions with hypnotizing realism of mud and vehicle physics.</p>
+    <div class="content"><p>Mechanics may feel dull and done, but this is true only when speaking of spherical horses in a vacuum.</p>
+
+<p>Consider <a href="https://en.wikipedia.org/wiki/Spintires">Spintires: The Original Game (2014-2020)</a>, which is an outstanding simulation/game about off-road cargo delivery missions with hypnotizing realism of mud and vehicle physics.</p>
 
 <p><a href="https://www.ign.com/articles/stuck-in-the-mud-how-a-tiny-beloved-driving-game-sparked-a-bizarre-decade-long-feud">A mess with imbalanced rewards between Pavel Zagrebelnyy, Saber, and Oovee</a> has led them to three separate games which are missing the main question to answer: Will a given vehicle (with cargo) pass the swamp or not, what does work, what does not?</p>
 
@@ -264,7 +260,7 @@ which splits into a vector and an irreducible component <span class="math inline
 
 <p>Imagine the best of Spintires and <a href="https://en.wikipedia.org/wiki/BeamNG.drive">BeamNg.drive</a> united into a single game.</p>
 
-<p>More physics, geometry, details. A deeper forest. We do not know how deep a forest can be.</p>
+<p>More physics, geometry, details. Deeper forests, even more wilderness.</p>
 
 <h3>References</h3>
 
@@ -288,9 +284,9 @@ which splits into a vector and an irreducible component <span class="math inline
 
 <div class="article">
     <h2>My Favorite French Films</h2>
-    <div class="summary"><p>My favorite French films grouped by decades.</p>
+    <div class="summary"><p>This is a list of my favorite French films, grouped by decade. I define &lsquo;French&rsquo; somewhat loosely here; it could include, for example, an Iranian film director influenced by French culture. I tend to favour visuals and sound to analysis and Cannes, but this is all very foggy and hopelessly incomplete. Notice that France alone produces about 300 films annually, and a single film director may direct/produce tens or even over a hundred films in his life time. This is quite a universe to enjoy.</p>
 </div>
-    <div class="content"><p>My favorite French films grouped by decades.</p>
+    <div class="content"><p>This is a list of my favorite French films, grouped by decade. I define &lsquo;French&rsquo; somewhat loosely here; it could include, for example, an Iranian film director influenced by French culture. I tend to favour visuals and sound to analysis and Cannes, but this is all very foggy and hopelessly incomplete. Notice that France alone produces about 300 films annually, and a single film director may direct/produce tens or even over a hundred films in his life time. This is quite a universe to enjoy.</p>
 
 <h3>FR-1960</h3>
 
@@ -444,6 +440,8 @@ which splits into a vector and an irreducible component <span class="math inline
 
 <p><a href="https://www.imdb.com/title/tt13044528/">La Révolution (2020)</a></p>
 
+<p><a href="https://www.imdb.com/title/tt11068166/">À l&rsquo;abordage (2020)</a></p>
+
 <p><a href="https://www.imdb.com/title/tt13846526/">La place d&rsquo;une autre (2021)</a></p>
 
 <p><a href="https://www.imdb.com/title/tt12708658/">Les Olympiades, Paris 13e (2021)</a></p>
@@ -456,9 +454,9 @@ which splits into a vector and an irreducible component <span class="math inline
 
 <div class="article">
     <h2>Classical Light</h2>
-    <div class="summary"><p>Physics gets <a href="https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus">tiresome</a> with QM and QFT. Mathematics does a bad job compressing it. However, we have very few key experiments. This is the way.</p>
+    <div class="summary"><p>Physics gets <a href="https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus">tiresome</a> with QM and QFT. Mathematics does a bad job compressing it. However, we have very few key experiments. This is the way not to get lost in this space.</p>
 </div>
-    <div class="content"><p>Physics gets <a href="https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus">tiresome</a> with QM and QFT. Mathematics does a bad job compressing it. However, we have very few key experiments. This is the way.</p>
+    <div class="content"><p>Physics gets <a href="https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus">tiresome</a> with QM and QFT. Mathematics does a bad job compressing it. However, we have very few key experiments. This is the way not to get lost in this space.</p>
 
 <p><a href="https://physicsteacher.blog/category/eratosthenes-size-of-the-earth-radius-of-the-earth-first-measurement/">Eratosthenes (240 BC).</a> Measuring the radius of Earth. &ldquo;You know,&rdquo; said the visitor, &ldquo;at noon on this day, in my home town there are no shadows.&rdquo;</p>
 
@@ -482,9 +480,9 @@ which splits into a vector and an irreducible component <span class="math inline
 
 <div class="article">
     <h2>Lithuania (and a bit of Latvia)</h2>
-    <div class="summary"><p>A sample of Lithuanian painters, cinema, books, music.</p>
+    <div class="summary"><p>A sample of Lithuanian painters, cinema, books, music. Created by a random Lithuanian.</p>
 </div>
-    <div class="content"><p>A sample of Lithuanian painters, cinema, books, music.</p>
+    <div class="content"><p>A sample of Lithuanian painters, cinema, books, music. Created by a random Lithuanian.</p>
 
 <p>Painters: <a href="https://www.youtube.com/watch?v=CNcCcQ38Sk4">Mikalojus Konstantinas Čiurlionis</a>, <a href="https://www.pinterest.com/pin/225461525066402919/">Arūnas Žilys</a>, <a href="https://youtu.be/amZBAYsepjY?t=1763">Никас Сафронов</a>.</p>
 

@@ -14,23 +14,15 @@ A few links related to programming philosophy, compilers, distributed systems, d
 
 - [mini-js](https://github.com/maierfelix/mini-js/tree/master): "Minimal self-hosted JavaScript compiler in 1k lines of code."
 
-- [Monkey](https://github.com/search?q=monkey+interpreter): A minimal Js-like language implemented with a recursive descent parser, in Go. Lots of following!
+- [Monkey](https://github.com/search?q=monkey+interpreter): A minimal Js-like language interpreter and bytecode VM implemented with a recursive descent parser, in Go. Lots of following!
 
 - [Mugo](https://benhoyt.com/writings/mugo/): A subset of Go compiled to the x86-64 assembly, in Go.
 
-- [M/o/Vfuscator](https://www.youtube.com/watch?v=R7EEoWg6Ekk): The single instruction C compiler.
-
 ### Distributed Systems
-
-- [Martin Fowler](https://martinfowler.com/bliki/FirstLaw.html): "My First Law of Distributed Object Design: Don't distribute your objects."
 
 - [Sameer Ajmani](https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go): Simulating a Real-World System in Go.
 
-- [Web Dev Cody](https://www.youtube.com/watch?v=SJaEbmeAI0o): Why understanding concurrency in Go is so important. Initially called "This is the biggest Go lang footgun."
-
 ### Design
-
-- [Cliff Brake](https://community.tmpdir.org/t/how-to-create-a-presentation-in-draw-io/488): How to create a presentation in draw.io.
 
 - [Dynomight](https://dynomight.net/lists/): How I learned to stop worrying and structure all writing as a list.
 
