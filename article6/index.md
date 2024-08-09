@@ -1,6 +1,6 @@
 # Classical Light
 
-Physics gets [tiresome](https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus) with QM and QFT. Mathematics does a bad job compressing it. However, we have very few key experiments. This is the way not to get lost in this space.
+Science &#8801; attention to detail. Classical light &#8801; classical electromagnetism.
 
 [Eratosthenes (240 BC).](https://physicsteacher.blog/category/eratosthenes-size-of-the-earth-radius-of-the-earth-first-measurement/) Measuring the radius of Earth. "You know," said the visitor, "at noon on this day, in my home town there are no shadows."
 
@@ -14,6 +14,8 @@ Physics gets [tiresome](https://en.wikipedia.org/wiki/Quantum_mechanical_scatter
 
 More of this magic: [Valerian Gervids](https://www.youtube.com/watch?v=qsLqQC52NTY), [Walter Lewin](https://youtu.be/ESAPg7w3wm8?t=2872), [Veritasium](https://youtu.be/oI_X2cMHNe0?t=1134), [QuinnPhys](https://www.youtube.com/watch?v=brPr1g-i2Tk), [3Blue1Brown](https://www.youtube.com/watch?v=aXRTczANuIs)...
 
+It gets [tiresome](https://en.wikipedia.org/wiki/Quantum_mechanical_scattering_of_photon_and_nucleus) with QM and QFT. The only way not to get lost in algebra is to trace progress vith experiments, but at some point the latter disappear.
+
 [Daniele Dallacasa (Radioastronomy)](http://www.ira.inaf.it/%7Eddallaca/L01_HDMHD.pdf): "Lectures will provide all (most of) the tools to understand what we observe in the Universe (i.e. radiation)".
 
-Science &#8801; attention to detail. Classical light &#8801; classical electromagnetism.
+

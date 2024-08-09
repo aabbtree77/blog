@@ -20,6 +20,8 @@ A few links related to programming philosophy, compilers, distributed systems, d
 
 ### Distributed Systems
 
+- [Martin Fowler](https://martinfowler.com/articles/distributed-objects-microservices.html): The First Law of Distributed Object Design: "don't distribute your objects". 
+
 - [Sameer Ajmani](https://sourcegraph.com/blog/go/simulating-a-real-world-system-in-go): Simulating a Real-World System in Go.
 
 ### Design
